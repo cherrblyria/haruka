@@ -3,6 +3,7 @@
   fonts = {
     packages = with pkgs; [
       adwaita-fonts
+      annotation-mono
       inter
       julia-mono
       nerd-fonts.caskaydia-cove
