@@ -6,6 +6,7 @@
     description = "cherr";
     extraGroups = [
       "networkmanager"
+      "dialout"
       "wheel"
       "uinput"
       "input"
