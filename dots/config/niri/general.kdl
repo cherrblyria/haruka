@@ -48,6 +48,12 @@ layout {
   struts
 }
 
+recent-windows {
+  highlight {
+    corner-radius 14
+  }
+}
+
 cursor {
   xcursor-theme "mizuki-psekai-cursor"
   xcursor-size 24
