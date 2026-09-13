@@ -3,14 +3,6 @@ binds {
   Alt+Space       { switch-layout "next"; }
   Alt+Shift+Space { switch-layout "prev"; }
 
-  // Window Switcher
-  Alt+Tab         { spawn-sh "noctalia msg window-switcher"; }
-  Alt+Shift+Tab   { spawn-sh "noctalia msg window-switcher"; }
-  Alt+Grave       { spawn-sh "noctalia msg window-switcher"; }
-  Alt+Shift+Grave { spawn-sh "noctalia msg window-switcher"; }
-  Mod+Grave       { spawn-sh "noctalia msg window-switcher"; }
-  Mod+Shift+Grave { spawn-sh "noctalia msg window-switcher"; }
-
   // Session
   Mod+Alt+L { spawn-sh "noctalia msg session lock"; }
 

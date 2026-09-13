@@ -1179,16 +1179,17 @@ transition = [ "fade" ]
 transition_on_startup = true
 
     [wallpaper.automation]
+    enabled = true
     interval_seconds = 600
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5er3r.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1qq259.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5er3r.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1qq259.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5er3r.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1qq259.png"
 
 [widget.active-workspace]
 glyph = ""
