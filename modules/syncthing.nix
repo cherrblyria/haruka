@@ -17,17 +17,6 @@
       };
 
       folders = {
-        "vault" = {
-          id = "vault";
-          label = "Cherr's Sanctuary";
-          path = "${config.services.syncthing.dataDir}/Documents/Cherr's Sanctuary";
-          ignorePatterns = [ ".obsidian/community-plugins.json" ];
-          devices = [
-            "Phone"
-            "Tablet"
-          ];
-        };
-
         "shared-dcim" = {
           id = "shared-dcim";
           label = "DCIM";
@@ -42,6 +31,17 @@
           id = "shared-pics";
           label = "Pictures";
           path = "${config.services.syncthing.dataDir}/Pictures";
+          devices = [
+            "Phone"
+            "Tablet"
+          ];
+        };
+
+        "shared-docs" = {
+          id = "shared-docs";
+          label = "Documents";
+          path = "${config.services.syncthing.dataDir}/Documents";
+          ignorePatterns = [ "**/.obsidian/community-plugins.json" ];
           devices = [
             "Phone"
             "Tablet"
