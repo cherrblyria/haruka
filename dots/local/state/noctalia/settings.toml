@@ -1061,7 +1061,7 @@ enabled = [
     name = "community"
 
 [shell]
-avatar_path = "/home/cherr/Pictures/Saved/Anime/17873729766930348.jpeg"
+avatar_path = "/home/cherr/Pictures/Saved/Anime/⋆·˚ ༘ _ kanade yoisaki pfp.jpeg"
 button_borders = false
 card_borders = false
 clipboard_auto_paste = "off"
@@ -1183,13 +1183,13 @@ transition_on_startup = true
     interval_seconds = 600
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqrv21.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqrv21.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqrv21.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
 [widget.active-workspace]
 glyph = ""
