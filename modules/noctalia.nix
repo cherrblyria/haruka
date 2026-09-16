@@ -8,18 +8,18 @@
         enable = true;
       };
     };
+  };
 
-    noctalia-greeter = {
-      enable = true;
-      greeter-args = "";
-      settings = {
-        cursor = {
-          size = 24;
-          theme = "mizuki-psekai-cursor";
-        };
-        keyboard = {
-          layout = "us";
-        };
+  services.displayManager.noctalia-greeter = {
+    enable = true;
+    greeter-args = "";
+    settings = {
+      cursor = {
+        size = 24;
+        theme = "mizuki-psekai-cursor";
+      };
+      keyboard = {
+        layout = "us";
       };
     };
   };
