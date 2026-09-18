@@ -20,8 +20,8 @@
       package = pkgs.adw-gtk3;
     };
     iconTheme = {
-      name = "WhiteSur";
-      package = pkgs.whitesur-icon-theme;
+      name = "WhiteSur-grey";
+      package = (pkgs.whitesur-icon-theme.override { themeVariants = [ "grey" ]; });
     };
   };
 }

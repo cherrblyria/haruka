@@ -1061,7 +1061,7 @@ enabled = [
     name = "community"
 
 [shell]
-avatar_path = "/home/cherr/Pictures/Saved/Anime/f1fd4dc749737a619bd65d3a64966a90.jpg"
+avatar_path = "/home/cherr/Pictures/Saved/Anime/𝐊𝐀𝐍𝐀𝐃𝐄 𝐈𝐂𝐎𝐍 ଘ(੭_ˊᵕˋ)੭_ ̀ˋ.jpeg"
 button_borders = false
 card_borders = false
 clipboard_auto_paste = "off"
@@ -1186,13 +1186,13 @@ transition_on_startup = true
     interval_seconds = 600
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Os X Yosemite Wallpaper Are Here And They Re Beautiful Slashgear.jpg"
+    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Os X Yosemite Wallpaper Are Here And They Re Beautiful Slashgear.jpg"
+    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Os X Yosemite Wallpaper Are Here And They Re Beautiful Slashgear.jpg"
+    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
 
 [widget.active-workspace]
 glyph = ""
