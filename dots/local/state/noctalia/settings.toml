@@ -1088,13 +1088,15 @@ screen_time_enabled = true
     Thai = "TH"
 
     [shell.launcher]
-    app_grid = true
     auto_paste = "off"
     sort_by_usage = false
 
         [shell.launcher.providers.calculator]
         global = true
         prefix = ""
+
+        [shell.launcher.providers.windows]
+        global = true
 
     [shell.panel]
     borders = false
@@ -1113,6 +1115,7 @@ screen_time_enabled = true
     confirm_region = true
     directory = "/home/cherr/Pictures/Screenshots"
     filename_pattern = "Screenshot_%Y%m%d_%H%M%S"
+    skip_annotate_on_copy_save = true
 
     [[shell.session.actions]]
     action = "lock"
@@ -1186,13 +1189,13 @@ transition_on_startup = true
     interval_seconds = 600
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Konachan.com_-_394537_2girls_dark_grass_headphones_kneehighs_nengoro_night_original_phone_scenic_school_uniform_shirt_short_hair_shoujo_ai_signed_skirt_sky_stars.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
 [widget.active-workspace]
 glyph = ""
