@@ -13,6 +13,7 @@
   services.displayManager.noctalia-greeter = {
     enable = true;
     greeter-args = "";
+    passwordless-sync-users = [ "cherr" ];
     settings = {
       cursor = {
         size = 24;
