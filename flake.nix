@@ -3,11 +3,15 @@
     extra-substituters = [
       "https://noctalia.cachix.org"
       "https://nix-gaming.cachix.org"
+      "https://cache.garnix.io"
+      "https://freesmlauncher.cachix.org"
       "https://cherrblyria.cachix.org"
     ];
     extra-trusted-public-keys = [
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
+      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+      "freesmlauncher.cachix.org-1:Jcp5Q9wiLL+EDv8Mh7c6L9xGk+lXr7/otpKxMOuBuDs="
       "cherrblyria.cachix.org-1:1tlxt98I/WI6e+PjmU6mBOj2qpLOmB2S4z8U4shx2tc="
     ];
   };
