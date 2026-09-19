@@ -122,6 +122,7 @@ widget_order = [
     box_width = 128.0
     cx = 1247.0
     cy = 152.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -143,6 +144,7 @@ widget_order = [
     box_width = 328.0
     cx = 1195.0
     cy = 344.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -185,6 +187,7 @@ widget_order = [
     box_width = 224.0
     cx = 1247.0
     cy = 152.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -232,6 +235,7 @@ widget_order = [
     box_width = 96.0
     cx = 1079.0
     cy = 152.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -272,6 +276,7 @@ widget_order = [
     box_width = 80.0
     cx = 1079.0
     cy = 112.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -294,6 +299,7 @@ widget_order = [
     box_width = 80.0
     cx = 1079.0
     cy = 176.0
+    enabled = false
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -1089,7 +1095,6 @@ screen_time_enabled = true
 
     [shell.launcher]
     auto_paste = "off"
-    sort_by_usage = false
 
         [shell.launcher.providers.calculator]
         global = true
@@ -1186,16 +1191,15 @@ transition_on_startup = true
 
     [wallpaper.automation]
     enabled = true
-    interval_seconds = 600
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
 
 [widget.active-workspace]
 glyph = ""
