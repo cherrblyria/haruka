@@ -2,8 +2,8 @@
 {
   environment.systemPackages = with pkgs; [
     # WM/Shell
-    wl-clipboard
     mizuki-psekai-cursor
+    wl-clipboard
 
     # CLI/TUI
     eza
@@ -19,6 +19,7 @@
     czkawka
     krita
     vesktop
+    blockbench
 
     # Games
     (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override {
