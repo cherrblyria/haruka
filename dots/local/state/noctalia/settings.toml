@@ -25,6 +25,7 @@ order = [ "Main", "Workspace-OSD" ]
         [bar.Main.dead_zone.actions]
         back = "workspace-switch next"
         forward = "workspace-switch prev"
+        middle = "annotate"
         scroll_down = "workspace-switch next"
         scroll_up = "workspace-switch prev"
 
@@ -35,7 +36,7 @@ order = [ "Main", "Workspace-OSD" ]
         enabled = true
         fill = "surface_variant"
         id = "g4"
-        members = [ "tray", "notes", "wallhaven", "brightness", "volume" ]
+        members = [ "tray", "notes_2", "wallhaven", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -1033,12 +1034,18 @@ position = "bottom_center"
 position_vertical = "center_right"
 scale = 0.85000000521540642
 
+[plugin_settings."dotnetrob/cat"]
+panel_open_near_click = false
+
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
 panel_open_near_click = true
 
 [plugin_settings."noctalia/wallhaven"]
 download_dir = "/home/cherr/Wallpapers/Wallheaven"
+
+[plugin_settings."noctalia/world_clock"]
+panel_open_near_click = false
 
 [plugin_settings."radimous/prismlauncher-instances"]
 launcher_exec_command = "freesmlauncher"
@@ -1193,13 +1200,13 @@ transition_on_startup = true
     enabled = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/mmAir_-_Winter_Morning.png"
+    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
 
 [widget.active-workspace]
 glyph = ""
@@ -1280,6 +1287,9 @@ title_scroll = "on_hover"
     scroll_up = "none"
 
 [widget.notes]
+type = "noctalia/notes:notes"
+
+[widget.notes_2]
 type = "noctalia/notes:notes"
 
 [widget.notifications]

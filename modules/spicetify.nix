@@ -6,8 +6,10 @@ in
   programs.spicetify = {
     enable = true;
     wayland = true;
+    windowManagerPatch = true;
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
+      aiBandBlocker
       autoSkipExplicit
       copyToClipboard
       hidePodcasts
@@ -15,10 +17,15 @@ in
     ];
     enabledCustomApps = with spicePkgs.apps; [
       lyricsPlus
-      marketplace
       ncsVisualizer
     ];
-    # theme = "marketplace";
+    enabledSnippets = [
+      "removeGradient"
+      "modernScrollbar"
+      "prettyLyrics"
+      "pointer"
+    ];
+    theme = spicePkgs.themes.defaultDynamic;
     # colorScheme = "";
   };
 }
