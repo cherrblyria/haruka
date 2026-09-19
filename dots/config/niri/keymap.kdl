@@ -18,7 +18,7 @@ binds {
   Mod+Ctrl+C { center-visible-columns; }
 
   Mod+F       { maximize-column; }
-  Mod+M       { maximize-window-to-edges; }
+  Mod+Shift+M       { maximize-window-to-edges; }
   Mod+Shift+F { fullscreen-window; }
 
   Mod+T       { toggle-window-floating; }
@@ -109,15 +109,16 @@ binds {
 
   // Panels
   Mod+Space         { spawn-sh "noctalia msg panel-toggle launcher"; }
+  Mod+V             { spawn-sh "noctalia msg panel-toggle clipboard"; }
   Mod+D             { spawn-sh "noctalia msg panel-toggle control-center home"; }
   Mod+S             { spawn-sh "noctalia msg panel-toggle control-center media"; }
   Mod+A             { spawn-sh "noctalia msg panel-toggle control-center audio"; }
+  Ctrl+Shift+Escape { spawn-sh "noctalia msg panel-toggle control-center system"; }
+  Mod+B             { spawn-sh "noctalia msg panel-toggle control-center bluetooth"; }
   Mod+N             { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
-  Mod+V             { spawn-sh "noctalia msg panel-toggle clipboard"; }
-  Mod+B             { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
+  Mod+M             { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
   Mod+Shift+W       { spawn-sh "noctalia msg panel-toggle wallpaper"; }
   Mod+Ctrl+W        { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
-  Ctrl+Shift+Escape { spawn-sh "noctalia msg panel-toggle control-center system"; }
   Ctrl+Alt+Delete   { spawn-sh "noctalia msg panel-toggle session"; }
 
   // Scroll
@@ -144,8 +145,9 @@ binds {
 
   // Screenshots
   Print       allow-when-locked=true { spawn-sh "noctalia msg screenshot-fullscreen"; }
-  Ctrl+Print  allow-when-locked=true { spawn-sh "noctalia msg screenshot-annotate"; }
+  Alt+Print   allow-when-locked=true { spawn-sh "noctalia msg screenshot-annotate"; }
   Shift+Print allow-when-locked=true { spawn-sh "noctalia msg screenshot-region"; }
+  Ctrl+Print  allow-when-locked=true { spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all toggle"; }
 
   // Volume
   XF86AudioRaiseVolume       allow-when-locked=true { spawn-sh "noctalia msg volume-up 5"; }

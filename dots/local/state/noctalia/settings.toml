@@ -15,7 +15,7 @@ order = [ "Main", "Workspace-OSD" ]
     capsule_border = "outline"
     capsule_opacity = 0.24999999441206455
     center = [ "cat", "clock", "text_3", "date" ]
-    end = [ "audio_visualizer", "privacy", "lock_keys", "group:g4", "notifications", "battery" ]
+    end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     padding = 6
     panel_overlap = 0
@@ -693,7 +693,7 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000010.settings]
         background = false
-        image_path = "/home/cherr/Documents/Noctalia/herta_1.png"
+        image_path = "/home/cherr/Projects/Noctalia/herta_1.png"
         opacity = 1.0
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000012]
@@ -1034,12 +1034,24 @@ position = "bottom_center"
 position_vertical = "center_right"
 scale = 0.85000000521540642
 
+[plugin_settings."alexander/screen-toolkit"]
+filename-format = "%Y%m%d_%H%M%S"
+panel-legacy_placement = "attached"
+panel_placement = "attached"
+record-audio-out = true
+result_placement = "attached"
+
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
 
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
 panel_open_near_click = true
+
+[plugin_settings."noctalia/screen_recorder"]
+color_range = "full"
+hide_inactive = true
+video_source = "focused"
 
 [plugin_settings."noctalia/wallhaven"]
 download_dir = "/home/cherr/Wallpapers/Wallheaven"
@@ -1060,7 +1072,8 @@ enabled = [
     "salemsayed/niri-active-workspace",
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
-    "noctalia/notes"
+    "noctalia/notes",
+    "noctalia/screen_recorder"
 ]
 
     [[plugins.source]]
@@ -1091,7 +1104,7 @@ popup_borders = false
 screen_time_enabled = true
 
     [shell.animation]
-    speed = 0.7500000111758709
+    speed = 0.65000000968575478
 
     [shell.greeter_sync]
     auto_sync = true
@@ -1200,13 +1213,13 @@ transition_on_startup = true
     enabled = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/mmAir_-_Slow_Life.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1265,7 +1278,7 @@ color = "on_surface_variant"
 format = "{:%a, %d %b}"
 
 [widget.launcher]
-custom_image = "/home/cherr/Documents/Noctalia/nix.png"
+custom_image = "/home/cherr/Projects/Noctalia/nix.png"
 custom_image_colorize = true
 icon_color = "secondary"
 scale = 1.4000000000000001
@@ -1297,6 +1310,9 @@ hide_when_no_unread = true
 
 [widget.privacy]
 hide_inactive = true
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
 
 [widget.session]
 color = "error"
