@@ -1,11 +1,11 @@
 [Default Applications]
-x-scheme-handler/discord=vesktop.desktop
-inode/directory=org.gnome.Nautilus.desktop
-image/*=org.gnome.Loupe.desktop
-image/gif=org.gnome.Loupe.desktop
-image/png=org.gnome.Loupe.desktop
-image/jpeg=org.gnome.Loupe.desktop
-x-scheme-handler/webcal=brave-origin.desktop
 
 [Added Associations]
+image/*=org.gnome.Loupe.desktop
+image/gif=org.gnome.Loupe.desktop
+image/jpeg=org.gnome.Loupe.desktop
 image/jpeg=org.gnome.Loupe.desktop;
+image/png=org.gnome.Loupe.desktop
+inode/directory=org.gnome.Nautilus.desktop
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/webcal=brave-origin.desktop
