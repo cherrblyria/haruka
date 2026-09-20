@@ -1,5 +1,6 @@
 {
   nixpkgs.overlays = [
+    # Mizuki Cursor
     (final: prev: {
       mizuki-psekai-cursor = prev.runCommand "mizuki-psekai-cursor" { } ''
         mkdir -p $out/share/icons/mizuki-psekai-cursor

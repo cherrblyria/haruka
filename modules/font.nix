@@ -12,7 +12,7 @@
       noto-fonts-cjk-serif
       noto-fonts-color-emoji
 
-      # Install fonts in assets dir
+      # Install fonts from assets dir
       (pkgs.runCommand "my-fonts" { } ''
         mkdir -p $out/share/fonts/truetype
         cp -r ${../assets/fonts}/* $out/share/fonts/truetype/

@@ -1,15 +1,11 @@
 {
   programs = {
+    gpu-screen-recorder.enable = true;
     niri.enable = true;
-
     noctalia = {
       enable = true;
-      recommendedServices = {
-        enable = true;
-      };
+      recommendedServices.enable = true;
     };
-
-    gpu-screen-recorder.enable = true;
   };
 
   services.displayManager.noctalia-greeter = {
@@ -21,9 +17,7 @@
         size = 24;
         theme = "mizuki-psekai-cursor";
       };
-      keyboard = {
-        layout = "us";
-      };
+      keyboard.layout = "us";
     };
   };
 }

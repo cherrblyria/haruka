@@ -36,7 +36,7 @@ layout {
     width 1
   }
   border {
-    // off
+    off
     width 1
   }
   shadow {

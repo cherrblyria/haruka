@@ -321,33 +321,41 @@ widget_order = [
 [dock]
 auto_hide = true
 background_opacity = 0.74999998323619366
+border_width = 1.0
+enabled = true
 inactive_opacity = 0.99999997764825821
 inactive_scale = 1.0
 item_spacing = 8
-launcher_custom_image = "/home/cherr/Documents/Noctalia/nix.png"
+launcher_custom_image = "/home/cherr/Projects/Noctalia/nix.png"
 launcher_custom_image_colorize = true
-launcher_position = "start"
 magnification_scale = 2.0
 main_axis_padding = 8
 margin_edge = 6
 pinned = [
-    "kitty",
     "org.gnome.Nautilus",
     "brave-origin",
     "obsidian",
-    "ai.opencode.desktop",
     "code",
+    "kitty",
+    "blockbench",
     "org.kde.krita",
     "spotify",
     "vesktop",
     "org.vinegarhq.Sober",
-    "org.polymc.PolyMC",
+    "org.freesmlauncher.FreesmLauncher",
     "osu-stable"
 ]
 radius = 80
 reserve_space = false
 show_dots = true
 show_instance_count = false
+
+[hot_corners]
+enabled = true
+
+    [hot_corners.top_right]
+    action = "command"
+    command = "noctalia msg panel-toggle noctalia/notes:panel"
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -1044,6 +1052,14 @@ result_placement = "attached"
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
 
+[plugin_settings."goatnath/spotify-lyrics"]
+lyrics-panel_placement = "attached"
+
+[plugin_settings."h465855hgg/lyrics"]
+lyrics_sources = [ "lrclib", "spotify", "apple_music", "musixmatch", "splayer", "qqmusic", "kugou", "qishui", "netease" ]
+player_allowlist = [ "Spotify", "spotify" ]
+translation_language = "en"
+
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
 panel_open_near_click = true
@@ -1062,6 +1078,13 @@ panel_open_near_click = false
 [plugin_settings."radimous/prismlauncher-instances"]
 launcher_exec_command = "freesmlauncher"
 prism_path = "~/.local/share/FreesmLauncher"
+
+[plugin_settings."tranzem/media-lyrics"]
+panel-compact_placement = "attached"
+panel-large_placement = "attached"
+panel-mini_placement = "attached"
+panel_placement = "attached"
+player_allowlist = "spotify, Spotify"
 
 [plugins]
 auto_update = "official"
@@ -1211,15 +1234,16 @@ transition_on_startup = true
 
     [wallpaper.automation]
     enabled = true
+    recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
 [widget.active-workspace]
 glyph = ""
@@ -1293,6 +1317,7 @@ art_size = 20
 artist_first = true
 hide_when_no_media = true
 max_length = 300
+show_progress = true
 title_scroll = "on_hover"
 
     [widget.media.actions]

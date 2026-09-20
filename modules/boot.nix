@@ -18,13 +18,12 @@
     accept-flake-config = true;
   };
 
-  # Enable 32bit for osu!
+  # GPU
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
     extraPackages = with pkgs; [
       intel-media-driver
     ];
-
   };
 }
