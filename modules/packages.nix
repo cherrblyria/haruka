@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
     # WM/Shell
@@ -20,17 +20,6 @@
     krita
     vesktop
     blockbench
-
-    # Games
-    (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override {
-      tricks = [
-        "gdiplus"
-        "dotnet48"
-        "meiryo"
-      ];
-      useGameMode = false;
-    })
-    inputs.freesmlauncher.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Gnome-ish
     engrampa
