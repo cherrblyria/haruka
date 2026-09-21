@@ -13,6 +13,8 @@
 
     flatpak.enable = true;
 
+    sunshine.enable = true;
+
     openssh.enable = true;
 
     dbus.enable = true;
