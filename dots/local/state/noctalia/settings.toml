@@ -11,10 +11,9 @@ enabled = true
 order = [ "Main", "Workspace-OSD" ]
 
     [bar.Main]
-    background_opacity = 0.74999998323619366
     capsule_border = "outline"
     capsule_opacity = 0.24999999441206455
-    center = [ "cat", "clock", "text_3", "date" ]
+    center = [ "cat", "clock", "bar_text", "date" ]
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     padding = 6
@@ -47,15 +46,15 @@ order = [ "Main", "Workspace-OSD" ]
         enabled = true
         fill = "surface_variant"
         id = "g1"
-        members = [ "launcher", "workspaces" ]
+        members = [ "launcher", "workspaces", "float_button", "maximize_button", "quit_button" ]
         opacity = 0.0
         padding = 0.0
 
     [bar.Workspace-OSD]
     auto_hide = true
-    background_opacity = 0.74999998323619366
+    background_opacity = 0.96999997831881046
     border_width = 1.0
-    center = [ "custom_button_2", "text_4", "active-workspace" ]
+    center = [ "workspace_icon", "workspace_text", "active-workspace" ]
     end = []
     margin_edge = 6
     margin_ends = 576
@@ -318,37 +317,8 @@ widget_order = [
         format = "{:%M}"
         shadow = true
 
-[dock]
-auto_hide = true
-background_opacity = 0.74999998323619366
-border_width = 1.0
-enabled = true
-inactive_opacity = 0.99999997764825821
-inactive_scale = 1.0
-item_spacing = 8
-launcher_custom_image = "/home/cherr/Projects/Noctalia/nix.png"
-launcher_custom_image_colorize = true
-magnification_scale = 2.0
-main_axis_padding = 8
-margin_edge = 6
-pinned = [
-    "org.gnome.Nautilus",
-    "brave-origin",
-    "obsidian",
-    "code",
-    "kitty",
-    "blockbench",
-    "org.kde.krita",
-    "spotify",
-    "vesktop",
-    "org.vinegarhq.Sober",
-    "org.freesmlauncher.FreesmLauncher",
-    "osu-stable"
-]
-radius = 80
-reserve_space = false
-show_dots = true
-show_instance_count = false
+[hooks]
+theme_mode_changed = "niri msg action do-screen-transition"
 
 [hot_corners]
 enabled = true
@@ -1028,13 +998,11 @@ enabled = true
 temperature_night = 5400
 
 [notification]
-background_opacity = 0.74999998323619366
 layer = "overlay"
 offset_x = 6
 offset_y = 6
 
 [osd]
-background_opacity = 0.74999998323619366
 offset_x = 6
 offset_y = 6
 orientation = "vertical"
@@ -1153,7 +1121,6 @@ screen_time_enabled = true
     launcher_placement = "attached"
     polkit_placement = "attached"
     session_position = "center"
-    transparency_mode = "glass"
 
     [shell.screen_corners]
     enabled = true
@@ -1237,13 +1204,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-gpokke.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-gpokke.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-gpokke.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1262,6 +1229,13 @@ width = 112
     right = "media toggle"
     scroll_down = "media previous"
     scroll_up = "media next"
+
+[widget.bar_text]
+anchor = true
+color = "outline"
+interactive = false
+text = "|"
+type = "text"
 
 [widget.battery]
 color = "#B8CE99"
@@ -1291,15 +1265,16 @@ format = "{:%R}"
     [widget.clock.actions]
     left = "panel-toggle noctalia/world_clock:panel"
 
-[widget.custom_button_2]
-color = "primary"
-glyph = "layout-grid"
-interactive = false
-type = "custom_button"
-
 [widget.date]
 color = "on_surface_variant"
 format = "{:%a, %d %b}"
+
+[widget.float_button]
+glyph = "stack-pop"
+type = "custom_button"
+
+    [widget.float_button.actions]
+    left = "exec niri msg action toggle-window-floating"
 
 [widget.launcher]
 custom_image = "/home/cherr/Projects/Noctalia/nix.png"
@@ -1311,6 +1286,13 @@ scale = 1.4000000000000001
 hide_when_off = true
 scale = 0.90000000000000002
 show_num_lock = false
+
+[widget.maximize_button]
+glyph = "arrows-maximize"
+type = "custom_button"
+
+    [widget.maximize_button.actions]
+    left = "exec niri msg action maximize-column"
 
 [widget.media]
 art_size = 20
@@ -1336,6 +1318,14 @@ hide_when_no_unread = true
 [widget.privacy]
 hide_inactive = true
 
+[widget.quit_button]
+color = "error"
+glyph = "x"
+type = "custom_button"
+
+    [widget.quit_button.actions]
+    left = "exec niri msg action close-window"
+
 [widget.recorder]
 type = "noctalia/screen_recorder:recorder"
 
@@ -1345,18 +1335,6 @@ color = "error"
 [widget.sysmon]
 show_value = false
 stat = "gpu_usage"
-
-[widget.text_3]
-anchor = true
-color = "outline"
-interactive = false
-text = "|"
-type = "text"
-
-[widget.text_4]
-interactive = false
-text = "Workspace"
-type = "text"
 
 [widget.tray]
 drawer = true
@@ -1369,6 +1347,17 @@ type = "noctalia/wallhaven:wallhaven"
 
 [widget.weather]
 show_temperature = false
+
+[widget.workspace_icon]
+color = "primary"
+glyph = "layout-grid"
+interactive = false
+type = "custom_button"
+
+[widget.workspace_text]
+interactive = false
+text = "Workspace"
+type = "text"
 
 [widget.workspaces]
 pill_scale = 0.59999999999999998

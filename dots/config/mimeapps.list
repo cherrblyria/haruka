@@ -1,6 +1,4 @@
 [Default Applications]
-
-[Added Associations]
 image/*=org.gnome.Loupe.desktop
 image/gif=org.gnome.Loupe.desktop
 image/jpeg=org.gnome.Loupe.desktop
