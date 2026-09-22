@@ -1010,23 +1010,8 @@ position = "bottom_center"
 position_vertical = "center_right"
 scale = 0.85000000521540642
 
-[plugin_settings."alexander/screen-toolkit"]
-filename-format = "%Y%m%d_%H%M%S"
-panel-legacy_placement = "attached"
-panel_placement = "attached"
-record-audio-out = true
-result_placement = "attached"
-
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
-
-[plugin_settings."goatnath/spotify-lyrics"]
-lyrics-panel_placement = "attached"
-
-[plugin_settings."h465855hgg/lyrics"]
-lyrics_sources = [ "lrclib", "spotify", "apple_music", "musixmatch", "splayer", "qqmusic", "kugou", "qishui", "netease" ]
-player_allowlist = [ "Spotify", "spotify" ]
-translation_language = "en"
 
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
@@ -1047,24 +1032,17 @@ panel_open_near_click = false
 launcher_exec_command = "freesmlauncher"
 prism_path = "~/.local/share/FreesmLauncher"
 
-[plugin_settings."tranzem/media-lyrics"]
-panel-compact_placement = "attached"
-panel-large_placement = "attached"
-panel-mini_placement = "attached"
-panel_placement = "attached"
-player_allowlist = "spotify, Spotify"
-
 [plugins]
 auto_update = "official"
 enabled = [
-    "noctalia/kaomoji",
-    "noctalia/wallhaven",
     "dotnetrob/cat",
-    "salemsayed/niri-active-workspace",
+    "noctalia/kaomoji",
+    "noctalia/notes",
+    "noctalia/screen_recorder",
+    "noctalia/wallhaven",
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
-    "noctalia/notes",
-    "noctalia/screen_recorder"
+    "salemsayed/niri-active-workspace"
 ]
 
     [[plugins.source]]
@@ -1196,7 +1174,8 @@ wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "~/Wallpapers"
-transition = [ "fade" ]
+edge_smoothness = 0.0
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe" ]
 transition_on_startup = true
 
     [wallpaper.automation]
@@ -1204,13 +1183,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-85vr92.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-85vr92.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-85vr92.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1239,6 +1218,7 @@ type = "text"
 
 [widget.battery]
 color = "#B8CE99"
+device = "/org/freedesktop/UPower/devices/battery_BAT0"
 display_mode = "graphic"
 hide_when_full = true
 hide_when_plugged = true
@@ -1299,7 +1279,6 @@ art_size = 20
 artist_first = true
 hide_when_no_media = true
 max_length = 300
-show_progress = true
 title_scroll = "on_hover"
 
     [widget.media.actions]
@@ -1307,9 +1286,6 @@ title_scroll = "on_hover"
     scroll_up = "none"
 
 [widget.notes]
-type = "noctalia/notes:notes"
-
-[widget.notes_2]
 type = "noctalia/notes:notes"
 
 [widget.notifications]
@@ -1338,6 +1314,8 @@ stat = "gpu_usage"
 
 [widget.tray]
 drawer = true
+drawer_columns = 4
+drawer_item_size = 18.0
 
 [widget.volume]
 show_label = false
@@ -1360,5 +1338,11 @@ text = "Workspace"
 type = "text"
 
 [widget.workspaces]
-pill_scale = 0.59999999999999998
-show_labels = false
+active_pill_size = 2.0
+empty_color = "surface"
+font_weight = 700
+occupied_color = "surface"
+
+    [widget.workspaces.actions]
+    back = "workspace-switch next"
+    forward = "workspace-switch prev"
