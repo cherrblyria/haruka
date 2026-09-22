@@ -363,9 +363,9 @@ tint_intensity = 0.0
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-widget-0000000000000004",
     "lockscreen-widget-0000000000000003",
     "lockscreen-widget-0000000000000016",
-    "lockscreen-widget-0000000000000004",
     "lockscreen-widget-0000000000000006",
     "lockscreen-login-box@eDP-1",
     "lockscreen-widget-0000000000000005",
@@ -377,7 +377,6 @@ widget_order = [
     "lockscreen-widget-000000000000000c",
     "lockscreen-widget-000000000000000e",
     "lockscreen-widget-0000000000000010",
-    "lockscreen-widget-0000000000000012",
     "lockscreen-widget-0000000000000013",
     "lockscreen-widget-0000000000000014",
     "lockscreen-widget-0000000000000015",
@@ -392,7 +391,9 @@ widget_order = [
     "lockscreen-widget-000000000000001d",
     "lockscreen-widget-000000000000001f",
     "lockscreen-widget-0000000000000020",
-    "lockscreen-widget-0000000000000021"
+    "lockscreen-widget-0000000000000021",
+    "lockscreen-widget-0000000000000022",
+    "lockscreen-widget-0000000000000012"
 ]
 
     [lockscreen_widgets.grid]
@@ -992,6 +993,22 @@ widget_order = [
         opacity = 0.0
         shadow = false
         title = ""
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000022]
+    box_height = 96.0
+    box_width = 96.0
+    cx = 1112.8193359375
+    cy = 630.276123046875
+    output = "eDP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = -0.0
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000022.settings]
+        background = false
+        image_path = "/home/cherr/Projects/Noctalia/Kemomimi-chan.gif"
+        opacity = 0.71999999999999997
 
 [nightlight]
 enabled = true
