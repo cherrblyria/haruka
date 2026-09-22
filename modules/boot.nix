@@ -18,6 +18,8 @@
     accept-flake-config = true;
   };
 
+hardware.uinput.enable = true;
+
   # GPU
   hardware.graphics = {
     enable = true;
