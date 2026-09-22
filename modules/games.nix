@@ -14,7 +14,12 @@
   services = {
     flatpak.enable = true; # For Sober (Roblox)
 
-    sunshine.enable = true; # I want to play minecraft on my phone 'cause why not?
+    sunshine = {
+      enable = true;
+      autoStart = true;
+      capSysAdmin = true;
+      openFirewall = true;
+    };
   };
 
   environment.systemPackages = [
