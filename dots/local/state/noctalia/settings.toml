@@ -35,7 +35,7 @@ order = [ "Main", "Workspace-OSD" ]
         enabled = true
         fill = "surface_variant"
         id = "g4"
-        members = [ "tray", "notes_2", "wallhaven", "brightness", "volume" ]
+        members = [ "tray", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -72,9 +72,6 @@ warning_threshold = 30
 
     [battery.device."/org/freedesktop/UPower/devices/mouse_dev_FF_35_05_27_06_D1"]
     warning_threshold = 10
-
-[brightness]
-minimum_brightness = 0.0099999997764825821
 
 [calendar]
 enabled = true
@@ -1200,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-ly27rq.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1303,6 +1300,9 @@ title_scroll = "on_hover"
     scroll_up = "none"
 
 [widget.notes]
+type = "noctalia/notes:notes"
+
+[widget.notes_2]
 type = "noctalia/notes:notes"
 
 [widget.notifications]
