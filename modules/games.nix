@@ -27,14 +27,14 @@
     in
     [
       # osu!stable
-      (gamePkgs.osu-stable.override rec {
+      (gamePkgs.osu-stable.override {
         tricks = [
           "gdiplus"
           "dotnet48"
           "meiryo"
         ];
         useGameMode = false;
-        wine-discord-ipc-bridge = gamePkgs.wine-discord-ipc-bridge;
+        inherit (gamePkgs) wine-discord-ipc-bridge;
       })
 
       # FreesmLauncher (Minecraft)

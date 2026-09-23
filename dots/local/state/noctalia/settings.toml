@@ -605,8 +605,8 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-000000000000000b]
     box_height = 96.0
     box_width = 176.0
-    cx = 203.23287963867188
-    cy = 141.98930358886719
+    cx = 206.12109375
+    cy = 147.0
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -747,8 +747,8 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000016]
     box_height = 48.0
     box_width = 288.0
-    cx = 197.6015625
-    cy = 151.87890625
+    cx = 203.0
+    cy = 152.0
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -1197,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-exv79k.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-exv79k.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-vqjv63.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-exv79k.png"
 
 [widget.active-workspace]
 glyph = ""
