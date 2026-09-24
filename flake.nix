@@ -67,7 +67,7 @@
         };
     in
     {
-      nixosConfigurations.nixos = mkNixos "/home/cherr/nixos-config/dots";
+      nixosConfigurations.yozora = mkNixos "/home/cherr/haruka/dots";
       nixosConfigurations.ci = mkNixos "${./dots}";
     };
 }

@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  networking.hostName = "nixos";
+  networking.hostName = "yozora";
   system.stateVersion = "26.11";
   nixpkgs.config.allowUnfree = true;
 

@@ -2,7 +2,7 @@
 {
   programs.nh = {
     enable = true;
-    flake = "${config.home.homeDirectory}/nixos-config";
+    flake = "${config.home.homeDirectory}/haruka";
     clean = {
       enable = true;
       dates = "saturday";
