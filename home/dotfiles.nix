@@ -1,4 +1,4 @@
-{ config, dots }:
+{ config, dots, ... }:
 let
   mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dots}/${path}";
 in
