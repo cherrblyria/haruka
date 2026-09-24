@@ -6,6 +6,7 @@
       enable = true;
       gtk.enable = true;
       x11.enable = true;
+
       name = "mizuki-psekai-cursor";
       package = pkgs.mizuki-psekai-cursor;
       size = 24;

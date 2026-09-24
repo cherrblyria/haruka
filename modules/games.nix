@@ -2,17 +2,17 @@
 {
   # Steam
   programs = {
+    gamemode.enable = true;
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
       gamescopeSession.enable = true;
     };
-
-    gamemode.enable = true;
   };
 
   services = {
-    flatpak.enable = true; # For Sober (Roblox)
+    # For Sober (Roblox)
+    flatpak.enable = true;
 
     sunshine = {
       enable = true;

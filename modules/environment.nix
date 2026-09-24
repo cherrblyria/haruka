@@ -1,6 +1,8 @@
 {
   environment = {
-    sessionVariables.LIBVA_DRIVER_NAME = "iHD";
+    sessionVariables = {
+      LIBVA_DRIVER_NAME = "iHD";
+    };
 
     variables = {
       # Wayland

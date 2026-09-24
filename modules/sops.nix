@@ -4,10 +4,10 @@
     defaultSopsFile = ../secrets/secrets.yaml;
     age.keyFile = "/var/lib/sops-nix/key.txt";
     secrets = {
-      "tailscale_key".owner = "cherr";
       "wallhaven_api_key".owner = "cherr";
     };
 
+    # Wallhaven API
     templates."noctalia_wallhaven.toml" = {
       owner = "cherr";
       path = "${config.users.users.cherr.home}/.config/noctalia/wallhaven.toml";

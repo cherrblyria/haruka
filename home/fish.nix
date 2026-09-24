@@ -14,9 +14,6 @@
           rm -f -- "$tmp"
         end
       '';
-      run = ''
-        nix run $argv
-      '';
     };
     shellAliases = {
       # Zoxide

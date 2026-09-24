@@ -30,10 +30,4 @@
       xkb.layout = "us,th";
     };
   };
-
-  # Open Tablet Driver
-  hardware.opentabletdriver = {
-    enable = true;
-    daemon.enable = true;
-  };
 }

@@ -1,14 +1,9 @@
 { pkgs, ... }:
 {
+  # NixOS
   networking.hostName = "yozora";
   system.stateVersion = "26.11";
   nixpkgs.config.allowUnfree = true;
-
-  boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
-    loader.systemd-boot.enable = true;
-    loader.efi.canTouchEfiVariables = true;
-  };
 
   nix.settings = {
     experimental-features = [
@@ -18,9 +13,31 @@
     accept-flake-config = true;
   };
 
+  # Kernel & Boot Loader
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+  };
+
+  # Hardware
   hardware = {
+    # Bluetooth
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+    };
+
+    # Open Tablet Driver
+    opentabletdriver = {
+      enable = true;
+      daemon.enable = true;
+    };
     uinput.enable = true;
 
+    # Graphics Card
     graphics = {
       enable = true;
       enable32Bit = true;
