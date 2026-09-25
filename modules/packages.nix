@@ -30,6 +30,9 @@
     showtime
     sushi
 
+    # Dev
+    direnv
+
     # NIX
     nixfmt
     nixd
@@ -42,7 +45,7 @@
     gst_all_1.gst-plugins-ugly
     gst_all_1.gst-libav
 
-    # Deps
+    # Media
     ffmpeg
     ffmpegthumbnailer
     poppler

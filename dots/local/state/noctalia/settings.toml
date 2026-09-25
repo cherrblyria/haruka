@@ -1176,7 +1176,7 @@ screen_time_enabled = true
     mru = true
 
 [theme]
-builtin = "Kanagawa"
+builtin = "Catppuccin"
 community_palette = "Monochrome"
 mode = "dark"
 source = "wallpaper"
@@ -1197,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-xe7ydz.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-jxeely.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-xe7ydz.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-jxeely.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-xe7ydz.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-jxeely.jpg"
 
 [widget.active-workspace]
 glyph = ""

@@ -1,12 +1,12 @@
 [Default Applications]
-application/pdf=org.gnome.Papers.desktop;
+application/pdf=org.gnome.Papers.desktop
 image/gif=org.gnome.Loupe.desktop
 image/jpeg=org.gnome.Loupe.desktop
 image/png=org.gnome.Loupe.desktop
-inode/directory=org.gnome.Nautilus.desktop;
-text/plain=org.gnome.TextEditor.desktop;
-x-scheme-handler/discord=vesktop.desktop;
-x-scheme-handler/webcal=brave-origin.desktop;
+inode/directory=org.gnome.Nautilus.desktop
+text/plain=org.gnome.TextEditor.desktop
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/webcal=brave-origin.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Papers.desktop;
