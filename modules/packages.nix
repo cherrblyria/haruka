@@ -32,6 +32,7 @@
 
     # Dev
     direnv
+    uv
 
     # NIX
     nixfmt
@@ -53,4 +54,5 @@
     webp-pixbuf-loader
   ];
   programs.fish.enable = true;
+  programs.nix-ld.enable = true;
 }
