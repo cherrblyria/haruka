@@ -29,6 +29,7 @@ ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param name="alpha" 
 FetchNews=true
 FetchNewsLanguages=en_Latn_US,en
 GamutMasks.viewMode=0
+KisDlgPreferences/CurrentPage=shortcuts
 Krita/Ocio/DisplayDevice=sRGB
 Krita/Ocio/DisplayLook=None
 Krita/Ocio/DisplayView=Raw
@@ -168,6 +169,9 @@ global/viewMode=icon
 [KisResourceItemChooser_paintoppresets]
 splitterState_1row=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\xff\xff\xff\xff\xff\xff\xff\xff\x01\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 splitterState_2row=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x03\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[KisShortcutsDialog Settings]
+Dialog Size=694,506
 
 [KisToolCrop]
 allowGrow=true

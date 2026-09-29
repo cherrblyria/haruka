@@ -1180,7 +1180,7 @@ builtin = "Catppuccin"
 community_palette = "Monochrome"
 mode = "dark"
 source = "wallpaper"
-wallpaper_scheme = "soft"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
@@ -1197,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-7j1kze.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-7j1kze.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-7j1kze.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
 
 [widget.active-workspace]
 glyph = ""
