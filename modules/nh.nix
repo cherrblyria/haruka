@@ -2,7 +2,7 @@
 {
   programs.nh = {
     enable = true;
-    flake = "${config.home.homeDirectory}/haruka";
+    flake = "${config.users.users.cherr.home}/haruka";
     clean = {
       enable = true;
       dates = "saturday";
