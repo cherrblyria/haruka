@@ -1197,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq28rl.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq28rl.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq28rl.jpg"
 
 [widget.active-workspace]
 glyph = ""
