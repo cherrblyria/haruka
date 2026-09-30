@@ -6,7 +6,7 @@ binds {
   Mod+Shift+Comma { spawn-sh "noctalia msg settings-open"; }
 
   // Action
-  Mod+Alt+L                          { spawn-sh "noctalia msg session lock"; }
+  Mod+Alt+L   allow-when-locked=true { spawn-sh "noctalia msg session lock"; }
   Mod+Alt+W   allow-when-locked=true { spawn-sh "noctalia msg wallpaper-random"; }
   Mod+Shift+D allow-when-locked=true { spawn-sh "noctalia msg caffeine-toggle"; }
   Mod+Shift+N allow-when-locked=true { spawn-sh "noctalia msg notification-dnd-toggle"; }
