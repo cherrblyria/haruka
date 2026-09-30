@@ -1087,7 +1087,7 @@ popup_borders = false
 screen_time_enabled = true
 
     [shell.animation]
-    speed = 0.65000000968575478
+    speed = 0.60000000894069672
 
     [shell.greeter_sync]
     auto_sync = true
@@ -1197,13 +1197,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-d8vd5m.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-w5xp77.png"
 
 [widget.active-workspace]
 glyph = ""
@@ -1336,6 +1336,10 @@ drawer_item_size = 18.0
 
 [widget.volume]
 show_label = false
+
+    [widget.volume.actions]
+    scroll_down = "volume-down 2"
+    scroll_up = "volume-up 2"
 
 [widget.wallhaven]
 type = "noctalia/wallhaven:wallhaven"

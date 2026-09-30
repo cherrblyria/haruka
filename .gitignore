@@ -1,12 +1,12 @@
-# Ignore build outputs from performing a nix-build or `nix build` command
+# Build outputs from performing a nix-build or `nix build` command
 result
 result-*
 
-# Ignore automatically generated direnv output
+# Automatically generated direnv output
 .direnv
 
-# Ignore NixOS interactive test driver history
+# NixOS interactive test driver history
 **/.nixos-test-history
 
-# Ignore VM qcow2
+# VM qcow2
 **/*.qcow2

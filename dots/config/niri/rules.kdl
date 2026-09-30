@@ -9,9 +9,32 @@ window-rule {
 
 window-rule {
   match app-id="org.gnome.NautilusPreviewer"
-  match app-id="obsidian" title="^Settings\\s-\\s(.*)\\s-\\sObsidian(.*)$"
-  match app-id="org.gnome.Nautilus" title="^Open(.*)"
+  match app-id="org.gnome.Nautilus"          title="^Open(.*)"
+  match app-id="obsidian"                    title="^Settings\\s-\\s(.*)\\s-\\sObsidian(.*)$"
+  match app-id="steam"                       title="^Friends\\sList$"
+  match app-id="steam"                       title="^(.*)\\s-\\sChat$"
+
   open-floating true
+}
+
+window-rule {
+  match app-id="OpenTabletDriver.UX.Gtk"
+  match app-id="md.obsidian.Obsidian"
+  match app-id="brave-origin"
+  match app-id="code"
+  match app-id="vesktop"
+  match app-id="spotify"
+
+  open-maximized-to-edges false
+  default-column-width { proportion 0.92; }
+}
+
+window-rule {
+  match app-id="blockbench"
+  match app-id="org.kde.krita"
+
+  open-maximized-to-edges false
+  open-maximized true
 }
 
 layer-rule {

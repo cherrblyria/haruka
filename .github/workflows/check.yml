@@ -33,7 +33,7 @@ jobs:
             run: nix flake check
             cachix: true
           - name: statix
-            run: nix run nixpkgs#statix -- check .
+            run: nix run nixpkgs#statix -- check --ignore '**/hardware-configuration.nix' .
             cachix: false
           - name: deadnix
             run: nix run nixpkgs#deadnix -- --fail --exclude '**/hardware-configuration.nix' .
