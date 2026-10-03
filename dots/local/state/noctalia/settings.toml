@@ -354,7 +354,10 @@ address = "Nakhon Pathom"
 
 [lockscreen]
 blur_intensity = 0.0
+edge_smoothness = 0.089999997988343239
 tint_intensity = 0.0
+transition = [ "fade" ]
+transition_duration = 1000
 
 [lockscreen_widgets]
 enabled = true
@@ -1012,6 +1015,7 @@ enabled = true
 temperature_night = 5400
 
 [notification]
+follow_focused_output = true
 layer = "overlay"
 offset_x = 6
 offset_y = 6
@@ -1085,6 +1089,7 @@ password_style = "random"
 polkit_agent = true
 popup_borders = false
 screen_time_enabled = true
+settings_expand_all_groups = true
 
     [shell.animation]
     speed = 0.60000000894069672
@@ -1197,13 +1202,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-we16px.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-powpem.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-we16px.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-powpem.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-we16px.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-powpem.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1293,6 +1298,7 @@ art_size = 20
 artist_first = true
 hide_when_no_media = true
 max_length = 300
+rotate_album_art = true
 title_scroll = "on_hover"
 
     [widget.media.actions]
