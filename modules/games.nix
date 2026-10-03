@@ -33,7 +33,7 @@
           "dotnet48"
           "meiryo"
         ];
-        useGameMode = false;
+        useGameMode = true;
         inherit (gamePkgs) wine-discord-ipc-bridge;
       })
 
