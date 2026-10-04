@@ -11,6 +11,7 @@ binds {
   Mod+Shift+D allow-when-locked=true { spawn-sh "noctalia msg caffeine-toggle"; }
   Mod+Shift+N allow-when-locked=true { spawn-sh "noctalia msg notification-dnd-toggle"; }
   Mod+Shift+P allow-when-locked=true { spawn-sh "noctalia msg dpms-off"; }
+  Mod+Shift+C allow-when-locked=true { spawn-sh "COLOR=$(niri msg pick-color | tail -n 1 | sed -e 's/Hex: //'); wl-copy ${COLOR}; noctalia msg notification-show 'Color picked' ${COLOR}"; }
 
   // Panels
   Mod+Space         { spawn-sh "noctalia msg panel-toggle launcher"; }
