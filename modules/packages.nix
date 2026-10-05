@@ -20,6 +20,7 @@
     krita
     vesktop
     blockbench
+    blender
 
     # Gnome-ish
     engrampa

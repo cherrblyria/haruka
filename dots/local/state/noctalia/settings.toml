@@ -2,6 +2,7 @@ config_version = 14
 
 [audio]
 enable_sounds = true
+sound_volume = 0.99999997764825821
 
 [backdrop]
 blur_intensity = 0.29999999999999999
@@ -1202,13 +1203,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5y7j89.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1pk58v.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5y7j89.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1pk58v.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5y7j89.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-1pk58v.jpg"
 
 [widget.active-workspace]
 glyph = ""
