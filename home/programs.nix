@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs = {
     # TUI
@@ -33,6 +34,9 @@
     obsidian = {
       enable = true;
       cli.enable = true;
+      package = pkgs.obsidian.override {
+        commandLineArgs = "--password-store=gnome-libsecret";
+      };
     };
 
     vscode = {
