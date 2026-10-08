@@ -4,17 +4,18 @@
     keyboards =
       let
         commonMain = {
-          capslock = "leftcontrol";
-          leftcontrol = "grave";
+          capslock = "leftcontrol";            # Capslock to Ctrl
+          "leftshift+rightshift" = "capslock"; # Both shift to Capslock
+          leftcontrol = "grave";               # Ctrl to Grave (`)
 
+          # Swap Super and Alt
           leftmeta = "leftalt";
           leftalt = "leftmeta";
 
+          # I don't why but this make it actually RIGHT keys
           rightalt = "rightalt";
           rightshift = "rightshift";
           rightcontrol = "rightcontrol";
-
-          "leftshift+rightshift" = "capslock";
         };
       in
       {
@@ -28,9 +29,10 @@
           settings.main = commonMain;
         };
 
-        externalKeyboard = {
+        nubwoX68Krueger = {
           ids = [ "258a:002a" ];
           settings.main = commonMain // {
+            # Custom right side keys
             home = "delete";
             delete = "sysrq";
             pageup = "volumeup";
