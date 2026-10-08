@@ -21,4 +21,6 @@
   };
   xdg.configFile."mimeapps.list".source =
     config.lib.file.mkOutOfStoreSymlink "${dots}/config/mimeapps.list";
+
+  services.gnome.gnome-keyring.enable = true;
 }

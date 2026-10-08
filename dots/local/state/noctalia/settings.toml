@@ -2,7 +2,7 @@ config_version = 14
 
 [audio]
 enable_sounds = true
-sound_volume = 0.99999997764825821
+sound_volume = 0.89999997988343239
 
 [backdrop]
 blur_intensity = 0.29999999999999999
@@ -73,6 +73,9 @@ warning_threshold = 30
 
     [battery.device."/org/freedesktop/UPower/devices/mouse_dev_FF_35_05_27_06_D1"]
     warning_threshold = 10
+
+[brightness]
+minimum_brightness = 0.0099999997764825821
 
 [calendar]
 enabled = true
@@ -1203,13 +1206,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-212krm.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-qrogm7.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-212krm.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-qrogm7.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-212krm.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-qrogm7.jpg"
 
 [widget.active-workspace]
 glyph = ""
