@@ -17,6 +17,7 @@
     # For Sober (Roblox)
     flatpak.enable = true;
 
+    # I want to play PC game on my tablet
     sunshine = {
       enable = true;
       autoStart = true;
