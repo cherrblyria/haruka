@@ -1221,13 +1221,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/最高に盛れる角度で_normal.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/最高に盛れる角度で_normal.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/最高に盛れる角度で_normal.png"
 
 [widget.active-workspace]
 glyph = ""
