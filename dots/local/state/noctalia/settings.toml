@@ -14,7 +14,7 @@ order = [ "Main", "Workspace-OSD" ]
     [bar.Main]
     capsule_border = "outline"
     capsule_opacity = 0.24999999441206455
-    center = [ "cat", "clock", "bar_text", "date" ]
+    center = [ "cat", "clock", "anchored_separator", "date" ]
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     padding = 6
@@ -27,12 +27,15 @@ order = [ "Main", "Workspace-OSD" ]
         forward = "workspace-switch prev"
         middle = "annotate"
         scroll_down = "workspace-switch next"
+        scroll_left = "exec niri msg action focus-column-left"
+        scroll_right = "exec niri msg action focus-column-right"
         scroll_up = "workspace-switch prev"
 
         [[bar.Main.capsule_group]]
         accordion = true
         accordion_direction = "start"
         border = ""
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g4"
@@ -44,10 +47,22 @@ order = [ "Main", "Workspace-OSD" ]
         accordion = true
         accordion_direction = "end"
         border = ""
+        border_width = 1.0
         enabled = true
         fill = "surface_variant"
         id = "g1"
-        members = [ "launcher", "workspaces", "float_button", "maximize_button", "quit_button" ]
+        members = [
+            "launcher",
+            "separator",
+            "workspaces",
+            "separator",
+            "center_button",
+            "float_button",
+            "maximize_button",
+            "fullscreen_button",
+            "quit_button",
+            "separator"
+        ]
         opacity = 0.0
         padding = 0.0
 
@@ -68,14 +83,14 @@ order = [ "Main", "Workspace-OSD" ]
     start = []
     thickness = 39
 
+        [bar.Workspace-OSD.dead_zone.actions]
+        right = "none"
+
 [battery]
 warning_threshold = 30
 
     [battery.device."/org/freedesktop/UPower/devices/mouse_dev_FF_35_05_27_06_D1"]
     warning_threshold = 10
-
-[brightness]
-minimum_brightness = 0.0099999997764825821
 
 [calendar]
 enabled = true
@@ -1078,7 +1093,7 @@ enabled = [
     name = "community"
 
 [shell]
-avatar_path = "/home/cherr/Pictures/Saved/Anime/𝐊𝐀𝐍𝐀𝐃𝐄 𝐈𝐂𝐎𝐍 ଘ(੭_ˊᵕˋ)੭_ ̀ˋ.jpeg"
+avatar_path = "/home/cherr/Pictures/Saved/Anime/1be096a35f84af499446b8757a968a4d.jpg"
 button_borders = false
 card_borders = false
 clipboard_auto_paste = "off"
@@ -1206,18 +1221,24 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Pixiv/126270092_p0.jpg"
+    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Pixiv/126270092_p0.jpg"
+    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Pixiv/126270092_p0.jpg"
+    path = "/home/cherr/Wallpapers/Render/portadsa_pickaxe.png"
 
 [widget.active-workspace]
 glyph = ""
 interactive = false
 type = "salemsayed/niri-active-workspace:active-workspace"
+
+[widget.anchored_separator]
+anchor = true
+color = "outline"
+text = "|"
+type = "text"
 
 [widget.audio_visualizer]
 color_2 = "tertiary"
@@ -1231,13 +1252,6 @@ width = 112
     right = "media toggle"
     scroll_down = "media previous"
     scroll_up = "media next"
-
-[widget.bar_text]
-anchor = true
-color = "outline"
-interactive = false
-text = "|"
-type = "text"
 
 [widget.battery]
 color = "#B8CE99"
@@ -1260,6 +1274,14 @@ enabled = false
 color = "on_surface_variant"
 type = "dotnetrob/cat:cat"
 
+[widget.center_button]
+glyph = "layout-align-middle"
+tooltip = "Center column"
+type = "custom_button"
+
+    [widget.center_button.actions]
+    left = "exec niri msg action center-column"
+
 [widget.clock]
 capsule_radius = "auto"
 color = "on_surface_variant"
@@ -1274,10 +1296,19 @@ format = "{:%a, %d %b}"
 
 [widget.float_button]
 glyph = "stack-pop"
+tooltip = "Toggle float window"
 type = "custom_button"
 
     [widget.float_button.actions]
     left = "exec niri msg action toggle-window-floating"
+
+[widget.fullscreen_button]
+glyph = "border-corners"
+tooltip = "Toggle fullscreen window"
+type = "custom_button"
+
+    [widget.fullscreen_button.actions]
+    left = "exec niri msg action fullscreen-window"
 
 [widget.launcher]
 custom_image = "/home/cherr/Projects/Noctalia/nix.png"
@@ -1292,6 +1323,7 @@ show_num_lock = false
 
 [widget.maximize_button]
 glyph = "arrows-maximize"
+tooltip = "Toggle maximize column"
 type = "custom_button"
 
     [widget.maximize_button.actions]
@@ -1324,6 +1356,7 @@ hide_inactive = true
 [widget.quit_button]
 color = "error"
 glyph = "x"
+tooltip = "Close window"
 type = "custom_button"
 
     [widget.quit_button.actions]
@@ -1331,6 +1364,11 @@ type = "custom_button"
 
 [widget.recorder]
 type = "noctalia/screen_recorder:recorder"
+
+[widget.separator]
+color = "outline"
+text = "|"
+type = "text"
 
 [widget.session]
 color = "error"

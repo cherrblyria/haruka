@@ -7,6 +7,7 @@ inode/directory=org.gnome.Nautilus.desktop
 text/plain=org.gnome.TextEditor.desktop
 x-scheme-handler/discord=vesktop.desktop
 x-scheme-handler/webcal=brave-origin.desktop
+text/markdown=md.obsidian.Obsidian.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Papers.desktop;
@@ -17,3 +18,4 @@ inode/directory=org.gnome.Nautilus.desktop;
 text/plain=org.gnome.TextEditor.desktop;
 x-scheme-handler/discord=vesktop.desktop;
 x-scheme-handler/webcal=brave-origin.desktop;
+text/markdown=md.obsidian.Obsidian.desktop;
