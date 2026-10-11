@@ -1,3 +1,5 @@
+// General
+
 window-rule {
   clip-to-geometry true
   draw-border-with-background false
@@ -7,6 +9,8 @@ window-rule {
   //   xray true
   // }
 }
+
+// Behavior
 
 window-rule {
   match app-id=r#"org\.gnome\.NautilusPreviewer"#
@@ -19,6 +23,8 @@ window-rule {
 
   open-floating true
 }
+
+// Size
 
 window-rule {
   match app-id=r#"^OpenTabletDriver\.UX\.Gtk$"#
@@ -42,6 +48,8 @@ window-rule {
   open-maximized true
 }
 
+// Steam
+
 window-rule {
   match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
   default-floating-position x=0 y=0 relative-to="bottom-right"
@@ -49,11 +57,20 @@ window-rule {
 }
 
 window-rule {
+  match app-id="steam" title=r#"^Steam\sBig\sPicture\sMode$"#
+  open-fullscreen true
+}
+
+// Privacy
+
+window-rule {
   match app-id=r#"^org\.keepassxc\.KeePassXC$"#
   match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
   block-out-from "screen-capture"
 }
+
+// Layer
 
 layer-rule {
   match namespace=r#"noctalia-backdrop"#
