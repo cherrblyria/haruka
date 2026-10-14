@@ -110,6 +110,8 @@ binds {
 
   Mod+I { move-workspace-up; }
   Mod+U { move-workspace-down; }
+  Mod+Ctrl+I { move-window-to-workspace-up; }
+  Mod+Ctrl+U { move-window-to-workspace-down; }
 
   // Focus Workspace
   Mod+1 { focus-workspace 1; }
