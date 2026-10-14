@@ -1093,7 +1093,7 @@ enabled = [
     name = "community"
 
 [shell]
-avatar_path = "/home/cherr/Pictures/Saved/Anime/1be096a35f84af499446b8757a968a4d.jpg"
+avatar_path = "/home/cherr/Pictures/Assets/rapidsave.com_1exg6ufee4vh1.gif"
 button_borders = false
 card_borders = false
 clipboard_auto_paste = "off"
@@ -1221,13 +1221,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-k8dvy7.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqexm7.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-k8dvy7.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqexm7.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-k8dvy7.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rqexm7.jpg"
 
 [widget.active-workspace]
 glyph = ""

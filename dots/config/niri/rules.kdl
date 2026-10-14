@@ -14,12 +14,12 @@ window-rule {
 
 window-rule {
   match app-id=r#"org\.gnome\.NautilusPreviewer"#
-  match app-id=r#"org\.gnome\.Nautilus"# title=r#"^Open(.*)"#
+  match app-id=r#"org\.gnome\.Nautilus"# title=r#"(?i)^Open(.*)"#
 
-  match app-id="obsidian" title=r#"^Settings\s-\s(.*)\s-\sObsidian(.*)$"#
-  match app-id="steam"    title=r#"^Friends\sList$"#
-  match app-id="steam"    title=r#"^(.*)\s-\sChat$"#
-  match app-id="blender"  title="Preferences"
+  match app-id="obsidian" title=r#"(?i)^Settings\s-\s(.*)\s-\sObsidian(.*)$"#
+  match app-id="steam"    title=r#"(?i)^Friends\sList$"#
+  match app-id="steam"    title=r#"(?i)^(.*)\s-\sChat$"#
+  match app-id="blender"  title=r#"(?i)Preferences"#
 
   open-floating true
 }
@@ -27,7 +27,7 @@ window-rule {
 // Size
 
 window-rule {
-  match app-id=r#"^OpenTabletDriver\.UX\.Gtk$"#
+  match app-id=r#"(?i)^OpenTabletDriver\.UX\.Gtk$"#
   match app-id=r#"^md\.obsidian\.Obsidian$"#
   match app-id="brave-origin"
   match app-id="code"
@@ -51,14 +51,28 @@ window-rule {
 // Steam
 
 window-rule {
-  match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+  match app-id="steam" title=r#"(?i)^notificationtoasts_\d+_desktop$"#
+
   default-floating-position x=0 y=0 relative-to="bottom-right"
   geometry-corner-radius 0
 }
 
 window-rule {
-  match app-id="steam" title=r#"^Steam\sBig\sPicture\sMode$"#
+  match app-id="steam" title=r#"(?i)^Steam\sBig\sPicture\sMode$"#
+
   open-fullscreen true
+}
+
+// Picture in Picture
+window-rule {
+  match title=r#"(?i)^picture\sin\spicture$"#
+
+  default-floating-position x=6 y=6 relative-to="top-right"
+  default-column-width { fixed 480; }
+  default-window-height { fixed 270; }
+  open-floating true
+  open-focused false
+  opacity 1.0
 }
 
 // Privacy
@@ -75,12 +89,14 @@ window-rule {
 layer-rule {
   match namespace=r#"noctalia-backdrop"#
   // match namespace=r#"noctalia-wallpaper"#
+
   place-within-backdrop true
 }
 
 layer-rule {
   match namespace=r#"^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"#
   match namespace=r#"^noctalia-desktop-widget-(.*)$"#
+
   background-effect {
     xray false
   }
@@ -88,6 +104,7 @@ layer-rule {
 
 layer-rule {
   match namespace="noctalia-window-switcher"
+
   background-effect {
     blur false
   }
