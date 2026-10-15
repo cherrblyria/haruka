@@ -32,7 +32,6 @@
     sushi
 
     # Dev
-    opencode-desktop
     direnv
     uv
 
