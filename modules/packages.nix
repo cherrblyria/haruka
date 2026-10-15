@@ -34,6 +34,7 @@
     # Dev
     direnv
     uv
+    gh
 
     # NIX
     nixfmt
