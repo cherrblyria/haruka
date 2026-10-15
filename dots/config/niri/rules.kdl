@@ -28,6 +28,7 @@ window-rule {
 
 window-rule {
   match app-id=r#"(?i)^OpenTabletDriver\.UX\.Gtk$"#
+  match app-id=r#"(?i)^ai\.opencode\.desktop$"#
   match app-id=r#"^md\.obsidian\.Obsidian$"#
   match app-id="brave-origin"
   match app-id="code"

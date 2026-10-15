@@ -8,6 +8,7 @@ text/plain=org.gnome.TextEditor.desktop
 x-scheme-handler/discord=vesktop.desktop
 x-scheme-handler/webcal=brave-origin.desktop
 text/markdown=md.obsidian.Obsidian.desktop
+x-scheme-handler/opencode=ai.opencode.desktop.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Papers.desktop;
@@ -19,3 +20,4 @@ text/plain=org.gnome.TextEditor.desktop;
 x-scheme-handler/discord=vesktop.desktop;
 x-scheme-handler/webcal=brave-origin.desktop;
 text/markdown=md.obsidian.Obsidian.desktop;
+x-scheme-handler/opencode=ai.opencode.desktop.desktop;
