@@ -170,10 +170,13 @@ binds {
   XF86AudioMute              allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
 
   // Brightness
-  XF86MonBrightnessDown       allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
-  XF86MonBrightnessUp         allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
-  Shift+XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down 1"; }
-  Shift+XF86MonBrightnessUp   allow-when-locked=true { spawn-sh "noctalia msg brightness-up 1"; }
+  XF86MonBrightnessUp          allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+  XF86MonBrightnessDown        allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
+  Shift+XF86MonBrightnessUp    allow-when-locked=true { spawn-sh "noctalia msg brightness-up 1"; }
+  Shift+XF86MonBrightnessDown  allow-when-locked=true { spawn-sh "noctalia msg brightness-down 1"; }
+
+  Mod+Alt+Ctrl+WheelScrollDown allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+  Mod+Alt+Ctrl+WheelScrollUp   allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
 
   // Media Keys
   XF86AudioNext allow-when-locked=true { spawn-sh "noctalia msg media next"; }
