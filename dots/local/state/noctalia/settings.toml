@@ -1221,13 +1221,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq2397.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq2397.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-83ywmo.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-yq2397.png"
 
 [widget.active-workspace]
 glyph = ""
@@ -1333,9 +1333,9 @@ type = "custom_button"
 art_size = 20
 artist_first = true
 hide_when_no_media = true
-max_length = 300
+max_length = 350
 rotate_album_art = true
-title_scroll = "on_hover"
+title_scroll = "always"
 
     [widget.media.actions]
     scroll_down = "none"

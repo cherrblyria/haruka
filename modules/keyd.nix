@@ -4,9 +4,9 @@
     keyboards =
       let
         commonMain = {
-          capslock = "leftcontrol";            # Capslock to Ctrl
+          capslock = "leftcontrol"; # Capslock to Ctrl
           "leftshift+rightshift" = "capslock"; # Both shift to Capslock
-          leftcontrol = "grave";               # Ctrl to Grave (`)
+          leftcontrol = "grave"; # Ctrl to Grave (`)
 
           # Swap Super and Alt
           leftmeta = "leftalt";
