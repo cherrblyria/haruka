@@ -7,8 +7,6 @@ binds {
 
   // Action
   Mod+P           allow-when-locked=true { spawn-sh "noctalia msg dpms-off"; }
-  Mod+Shift+P     allow-when-locked=true { spawn-sh "noctalia msg caffeine-disable; noctalia msg session lock; noctalia msg dpms-off"; }
-  Mod+Alt+Shift+L allow-when-locked=true { spawn-sh "noctalia msg caffeine-disable; noctalia msg session lock; noctalia msg dpms-off"; }
   Mod+Alt+L       allow-when-locked=true { spawn-sh "noctalia msg session lock"; }
   Mod+Alt+W       allow-when-locked=true { spawn-sh "noctalia msg wallpaper-random"; }
   Mod+Shift+D     allow-when-locked=true { spawn-sh "noctalia msg caffeine-toggle"; }
@@ -68,9 +66,8 @@ binds {
 
   // Resize
   Mod+R            { switch-preset-column-width; }
-  Mod+Shift+R      { switch-preset-column-width-back; }
+  Mod+Shift+R      { switch-preset-window-height; }
   Mod+Ctrl+R       { reset-window-height; }
-  Mod+Ctrl+Shift+R { switch-preset-window-height; }
 
   Mod+Equal       { set-column-width "+10%"; }
   Mod+Minus       { set-column-width "-10%"; }
@@ -111,10 +108,10 @@ binds {
 
   Mod+Tab { focus-workspace-previous; }
 
-  Mod+I { move-workspace-up; }
   Mod+U { move-workspace-down; }
-  Mod+Ctrl+I { move-window-to-workspace-up; }
+  Mod+I { move-workspace-up; }
   Mod+Ctrl+U { move-window-to-workspace-down; }
+  Mod+Ctrl+I { move-window-to-workspace-up; }
 
   // Focus Workspace
   Mod+1 { focus-workspace 1; }
@@ -141,8 +138,8 @@ binds {
   // Scroll
   Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
   Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
-  Mod+MouseForward                    { focus-workspace-up; }
   Mod+MouseBack                       { focus-workspace-down; }
+  Mod+MouseForward                    { focus-workspace-up; }
 
   Mod+WheelScrollLeft       { focus-column-left; }
   Mod+WheelScrollRight      { focus-column-right; }
@@ -151,15 +148,17 @@ binds {
   Mod+Shift+MouseForward    { focus-column-left; }
   Mod+Shift+MouseBack       { focus-column-right; }
 
-  Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-  Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
-  Mod+Ctrl+WheelScrollLeft       { move-column-left; }
-  Mod+Ctrl+WheelScrollRight      { move-column-right; }
-  Mod+Ctrl+MouseForward          { move-column-left; }
-  Mod+Ctrl+MouseBack             { move-column-right; }
+  Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+  Mod+Ctrl+WheelScrollRight { move-column-right; }
+  Mod+Ctrl+WheelScrollDown  { move-column-right; }
+  Mod+Ctrl+WheelScrollUp    { move-column-left; }
+  Mod+Ctrl+MouseForward     { move-column-left; }
+  Mod+Ctrl+MouseBack        { move-column-right; }
 
-  Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-  Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+  Mod+Ctrl+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+  Mod+Ctrl+Shift+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+  Mod+Ctrl+Shift+MouseForward                    { move-column-to-workspace-down; }
+  Mod+Ctrl+Shift+MouseBack                       { move-column-to-workspace-up; }
 
   // Volume
   XF86AudioRaiseVolume       allow-when-locked=true { spawn-sh "noctalia msg volume-up 2"; }
