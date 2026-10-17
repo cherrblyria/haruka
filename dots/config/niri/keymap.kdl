@@ -189,7 +189,8 @@ binds {
   XF86AudioPrev allow-when-locked=true { spawn-sh "noctalia msg media prev"; }
   XF86AudioStop allow-when-locked=true { spawn-sh "noctalia msg media stop"; }
 
-  Mod+Alt+B allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
-  Mod+Alt+N allow-when-locked=true { spawn-sh "noctalia msg media next"; }
-  Mod+Alt+P allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
+  Mod+Alt+Z allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
+  Mod+Alt+X allow-when-locked=true { spawn-sh "noctalia msg media toggle"; }
+  Mod+Alt+C allow-when-locked=true { spawn-sh "noctalia msg media stop"; }
+  Mod+Alt+V allow-when-locked=true { spawn-sh "noctalia msg media next"; }
 }
