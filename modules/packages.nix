@@ -21,6 +21,7 @@
     vesktop
     blockbench
     blender
+    easyeffects
 
     # Gnome-ish
     engrampa

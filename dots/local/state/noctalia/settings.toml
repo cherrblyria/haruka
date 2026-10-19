@@ -1245,13 +1245,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Pixiv/121764304_p0.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/145018036_p0.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Pixiv/121764304_p0.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/145018036_p0.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Pixiv/121764304_p0.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/145018036_p0.jpg"
 
 [widget.active-workspace]
 glyph = ""
