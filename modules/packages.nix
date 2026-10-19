@@ -24,6 +24,7 @@
     easyeffects
 
     # Gnome-ish
+    decibels
     engrampa
     gnome-text-editor
     loupe
