@@ -1143,8 +1143,9 @@ show_close_buttons = false
 
     [shell.launcher]
     auto_paste = "off"
-    categories = false
+    category_icons_only = true
     layout = "simple"
+    search_position = "top"
 
         [shell.launcher.providers.calculator]
         global = true
@@ -1245,13 +1246,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po31lp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5gqpo8.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po31lp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5gqpo8.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po31lp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-5gqpo8.png"
 
 [widget.active-workspace]
 glyph = ""
