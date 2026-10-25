@@ -21,6 +21,7 @@
     vesktop
     blockbench
     blender
+    pavucontrol
 
     # Gnome-ish
     decibels
