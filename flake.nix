@@ -25,7 +25,7 @@
     };
 
     # Noctalia
-    noctalia.url = "github:noctalia-dev/noctalia/v5.3.0";
+    noctalia.url = "github:noctalia-dev/noctalia/v5.4.1";
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";

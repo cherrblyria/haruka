@@ -1,4 +1,4 @@
-config_version = 15
+config_version = 16
 
 [audio]
 enable_sounds = true
@@ -12,7 +12,7 @@ enabled = true
 order = [ "Main", "Workspace-OSD" ]
 
     [bar.Main]
-    capsule_border = "outline"
+    capsule_border = "outline_variant"
     capsule_opacity = 0.24999999441206455
     center = [ "cat", "clock", "anchored_separator", "date" ]
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
@@ -37,9 +37,9 @@ order = [ "Main", "Workspace-OSD" ]
         border = ""
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g4"
-        members = [ "tray", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
+        members = [ "tray", "summary", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -49,7 +49,7 @@ order = [ "Main", "Workspace-OSD" ]
         border = ""
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g1"
         members = [
             "launcher",
@@ -103,6 +103,8 @@ enabled = true
     type = "google"
 
 [control_center]
+circular_avatar = false
+show_avatar_border = false
 width = 800
 
     [[control_center.shortcuts]]
@@ -385,11 +387,9 @@ address = "Nakhon Pathom"
 
 [lockscreen]
 blur_intensity = 0.0
-edge_smoothness = 0.089999997988343239
-grace_period_seconds = 2
+edge_smoothness = 0.0
 tint_intensity = 0.0
-transition = [ "fade" ]
-transition_duration = 1000
+transition = [ "pixel" ]
 
 [lockscreen_widgets]
 enabled = true
@@ -531,7 +531,7 @@ widget_order = [
     type = "label"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.94999999999999996
         background_padding = 0
         background_radius = 0
@@ -551,11 +551,11 @@ widget_order = [
     type = "label"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.94999999999999996
         background_padding = 0
         background_radius = 0
-        color = "surface_variant"
+        color = "surface_container"
         opacity = 0.0
         shadow = false
         title = ""
@@ -745,7 +745,7 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000013.settings]
         background = false
-        color = "outline"
+        color = "outline_variant"
         font_family = "Send Flowers"
         forecast_days = 3
         shadow = true
@@ -815,7 +815,7 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000017.settings]
         background = false
-        color = "outline"
+        color = "outline_variant"
         font_family = "JuliaMono Light"
         shadow = false
         title = "L   O   C   K   E   D"
@@ -833,8 +833,8 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000018.settings]
         background = false
-        color = "outline"
-        color2 = "surface_variant"
+        color = "outline_variant"
+        color2 = "surface_container"
         display = "gauge"
         font_family = "JuliaMono Light"
         gauge_layout = "horizontal"
@@ -856,8 +856,8 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000019.settings]
         background = false
-        color = "outline"
-        color2 = "surface_variant"
+        color = "outline_variant"
+        color2 = "surface_container"
         display = "gauge"
         font_family = "JuliaMono Light"
         gauge_layout = "horizontal"
@@ -879,8 +879,8 @@ widget_order = [
 
         [lockscreen_widgets.widget.lockscreen-widget-000000000000001a.settings]
         background = false
-        color = "outline"
-        color2 = "surface_variant"
+        color = "outline_variant"
+        color2 = "surface_container"
         display = "gauge"
         font_family = "JuliaMono Light"
         gauge_layout = "horizontal"
@@ -1070,6 +1070,11 @@ scale = 0.85000000521540642
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
 
+[plugin_settings."gustav0ar/drive-health"]
+drives_open_near_click = false
+drives_placement = "attached"
+system_collector_enabled = true
+
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
 panel_open_near_click = true
@@ -1099,7 +1104,8 @@ enabled = [
     "noctalia/wallhaven",
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
-    "salemsayed/niri-active-workspace"
+    "salemsayed/niri-active-workspace",
+    "gustav0ar/drive-health"
 ]
 
     [[plugins.source]]
@@ -1113,7 +1119,7 @@ enabled = [
     name = "community"
 
 [shell]
-avatar_path = "/home/cherr/Pictures/Saved/Anime/IMG_20260817_223552.png"
+avatar_path = "/home/cherr/Pictures/Saved/Anime/✿͜𓏼  𓈒◌  🎀 mizuki akiyama 𓈒   Ი 𓈒ᰍ (1).jpeg"
 button_borders = false
 card_borders = false
 clipboard_auto_paste = "off"
@@ -1129,7 +1135,6 @@ polkit_agent = true
 popup_borders = false
 screen_time_enabled = true
 settings_expand_all_groups = true
-show_close_buttons = false
 
     [shell.animation]
     speed = 0.60000000894069672
@@ -1137,11 +1142,8 @@ show_close_buttons = false
     [shell.greeter_sync]
     auto_sync = true
 
-    [shell.keyboard_layout.custom_labels]
-    "English (US)" = "US"
-    Thai = "TH"
-
     [shell.launcher]
+    app_grid = true
     auto_paste = "off"
     category_icons_only = true
     layout = "simple"
@@ -1202,12 +1204,9 @@ show_close_buttons = false
     variant = "default"
 
     [[shell.session.actions]]
-    action = "command"
-    command = "sudo systemctl reboot --firmware-setup"
+    action = "reboot_uefi"
     countdown_seconds = 5.0
     enabled = true
-    glyph = "cpu"
-    label = "Reboot to UEFI"
     shortcut = "5"
     variant = "default"
 
@@ -1238,21 +1237,22 @@ wallpaper_scheme = "m3-content"
 [wallpaper]
 directory = "~/Wallpapers"
 edge_smoothness = 0.0
-transition = [ "disc", "fade", "honeycomb", "stripes", "wipe" ]
+transition = [ "diamond", "disc", "honeycomb", "melt", "pixel", "stripes", "wipe" ]
 transition_on_startup = true
 
     [wallpaper.automation]
     enabled = true
+    pause_on_fullscreen = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-x69okd.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-x69okd.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-x69okd.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1261,7 +1261,7 @@ type = "salemsayed/niri-active-workspace:active-workspace"
 
 [widget.anchored_separator]
 anchor = true
-color = "outline"
+color = "outline_variant"
 text = "|"
 type = "text"
 
@@ -1363,8 +1363,8 @@ rotate_album_art = true
 title_scroll = "always"
 
     [widget.media.actions]
-    scroll_down = "none"
-    scroll_up = "none"
+    scroll_down = "media volume-down 2"
+    scroll_up = "media volume-up 2"
 
 [widget.notes]
 type = "noctalia/notes:notes"
@@ -1391,12 +1391,15 @@ type = "custom_button"
 type = "noctalia/screen_recorder:recorder"
 
 [widget.separator]
-color = "outline"
+color = "outline_variant"
 text = "|"
 type = "text"
 
 [widget.session]
 color = "error"
+
+[widget.summary]
+type = "gustav0ar/drive-health:summary"
 
 [widget.sysmon]
 show_value = false
