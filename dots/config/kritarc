@@ -313,7 +313,7 @@ zoomSteps=2
 [File Dialogs]
 DontUseNativeFileDialog=true
 OpenDocument=/home/cherr/Pictures/Wallpapers
-SaveAs=/home/cherr/Projects/Krita
+SaveAs=/home/cherr/Pictures/100PINT/Pins
 
 [GradientChooser]
 global/itemSize=medium
@@ -411,10 +411,10 @@ yPosition=18
 [MainWindow][DockWidget CompositionDocker]
 DockArea=2
 Locked=false
-height=462
-width=640
+height=300
+width=400
 xPosition=0
-yPosition=18
+yPosition=0
 
 [MainWindow][DockWidget DigitalMixer]
 DockArea=2
@@ -451,8 +451,8 @@ yPosition=18
 [MainWindow][DockWidget History]
 DockArea=2
 Locked=true
-height=312
-width=281
+height=462
+width=640
 xPosition=0
 yPosition=18
 
@@ -492,17 +492,17 @@ yPosition=0
 DockArea=2
 Locked=false
 height=102
-width=281
+width=100
 xPosition=0
-yPosition=18
+yPosition=0
 
 [MainWindow][DockWidget PaletteDocker]
 DockArea=2
 Locked=false
-height=103
-width=296
+height=422
+width=340
 xPosition=0
-yPosition=18
+yPosition=0
 
 [MainWindow][DockWidget PatternDocker]
 DockArea=2
@@ -515,10 +515,10 @@ yPosition=0
 [MainWindow][DockWidget PresetDocker]
 DockArea=2
 Locked=false
-height=233
-width=262
+height=439
+width=544
 xPosition=0
-yPosition=18
+yPosition=0
 
 [MainWindow][DockWidget PresetHistory]
 DockArea=2
@@ -678,8 +678,10 @@ pinControls=true
 [RecentFiles]
 File1[$e]=$HOME/Pictures/LINE/1789035230811.jpg
 File2[$e]=$HOME/Projects/Krita/something.kra
+File3[$e]=$HOME/Pictures/100PINT/Pins/⏝ ﹙🎀﹚ ⏝ㅤ ꒰ა    _. mizuki
 Name1=1789035230811.jpg
 Name2=something.kra
+Name3=⏝ ﹙🎀﹚ ⏝ㅤ ꒰ა    _. mizuki
 maxRecentFileItems=100
 
 [SelectedTags]

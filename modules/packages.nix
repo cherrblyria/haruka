@@ -37,6 +37,8 @@
     direnv
     uv
     gh
+    pyright
+    python315
 
     # NIX
     nixfmt
