@@ -5,18 +5,15 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 #### Screenshots
 
-| <img alt="Lockscreen" src="https://github.com/user-attachments/assets/9d05d780-7e8a-4460-9a7e-4af77d2498f2" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/a59cc290-5774-4df1-af6e-746d96f8d622" /> |
+| <img alt="Lockscreen" src="https://github.com/user-attachments/assets/12dd9e38-1554-4509-aed1-1fd05c7736ca" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/b54602c5-d9b8-4b05-938b-c8baffc60923" /> |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 
 ##### In these pics
 
 - Shell: [Noctalia](https://noctalia.dev/)
 - WM: [Niri](https://github.com/niri-wm/niri)
-- Wallpaper
-  - Game: [HatsuneMiku:ColorfulStage!](https://colorfulstage.com/)
-  - Frist: [sekai.best](https://sekai.best/card/1356)
-  - Second: [sekai.best](https://sekai.best/card/448)
-- Music: [Pocari Sweet波卡利甜 - By the ocean](https://open.spotify.com/track/2saVwcRjiSqHI6fTIcenZo)
+- Wallpaper: made by me :3
+- Music: [สุรสีห์ อิทธิกุล - ปราสาททราย](https://open.spotify.com/track/2VmWsYUlnS3af8FOAyHS8k)
 
 #### Assets credits
 
