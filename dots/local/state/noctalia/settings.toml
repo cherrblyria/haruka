@@ -39,7 +39,7 @@ order = [ "Main", "Workspace-OSD" ]
         enabled = true
         fill = "surface_container"
         id = "g4"
-        members = [ "tray", "summary", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
+        members = [ "tray", "status", "summary", "separator", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -1067,6 +1067,9 @@ position = "bottom_center"
 position_vertical = "center_right"
 scale = 0.85000000521540642
 
+[plugin_settings."aristides/udiskie"]
+manager_placement = "attached"
+
 [plugin_settings."dotnetrob/cat"]
 panel_open_near_click = false
 
@@ -1105,7 +1108,8 @@ enabled = [
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
     "salemsayed/niri-active-workspace",
-    "gustav0ar/drive-health"
+    "gustav0ar/drive-health",
+    "aristides/udiskie"
 ]
 
     [[plugins.source]]
@@ -1246,13 +1250,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-p9g7e3.jpg"
+    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
 
 [widget.active-workspace]
 glyph = ""
@@ -1397,6 +1401,9 @@ type = "text"
 
 [widget.session]
 color = "error"
+
+[widget.status]
+type = "aristides/udiskie:status"
 
 [widget.summary]
 type = "gustav0ar/drive-health:summary"

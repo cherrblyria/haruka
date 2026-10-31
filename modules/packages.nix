@@ -56,6 +56,8 @@
     gst_all_1.gst-libav
 
     # Drive
+    udiskie
+    udisks2
     smartmontools
     util-linux
 
