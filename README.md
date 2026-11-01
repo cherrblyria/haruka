@@ -1,4 +1,4 @@
-## Haruka - Cherr's NixOS configuration
+![](assets/images/haruka-logo-desc.svg)
 
 This is _my_ daily driver NixOS configuration.\
 It's just a simple one machine config w/ flake and simple modular configs.
