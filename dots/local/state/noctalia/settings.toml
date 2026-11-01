@@ -104,7 +104,6 @@ enabled = true
 
 [control_center]
 circular_avatar = false
-show_avatar_border = false
 width = 800
 
     [[control_center.shortcuts]]
@@ -122,10 +121,10 @@ width = 800
 [desktop_widgets]
 schema_version = 2
 widget_order = [
+    "desktop-widget-0000000000000006",
     "desktop-widget-000000000000000b",
     "desktop-widget-0000000000000008",
     "desktop-widget-0000000000000002",
-    "desktop-widget-0000000000000006",
     "desktop-widget-0000000000000001",
     "desktop-widget-000000000000000a",
     "desktop-widget-000000000000000c",
@@ -201,9 +200,11 @@ widget_order = [
         background_opacity = 0.75
         bands = 72
         centered = false
-        color_2 = "tertiary"
+        color_1 = "primary"
+        color_2 = "on_primary_container"
         mirrored = true
         reversed = false
+        show_wave = false
         show_when_idle = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000008]
@@ -673,6 +674,8 @@ widget_order = [
         color_1 = "surface"
         color_2 = "surface"
         mirrored = true
+        reversed = false
+        show_wave = false
         show_when_idle = true
 
     [lockscreen_widgets.widget.lockscreen-widget-000000000000000e]
@@ -1077,6 +1080,11 @@ panel_open_near_click = false
 drives_open_near_click = false
 drives_placement = "attached"
 
+[plugin_settings."ishan0121/wallpaper-deck"]
+extra_wallpaper_dir = "/home/cherr/Wallpapers"
+include_wallhaven_downloads = false
+wallpaper_dir = "/home/cherr/Wallpapers"
+
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
 panel_open_near_click = true
@@ -1106,7 +1114,8 @@ enabled = [
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
     "salemsayed/niri-active-workspace",
-    "aristides/udiskie"
+    "aristides/udiskie",
+    "nightwatch75/file-search"
 ]
 
     [[plugins.source]]
@@ -1233,7 +1242,7 @@ wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "discord", "vscode", "lazygit", "yazi" ]
+    community_ids = [ "discord", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "~/Wallpapers"
@@ -1247,13 +1256,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
 
 [widget.active-workspace]
 glyph = ""
