@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
     # WM/Shell
@@ -22,6 +22,7 @@
     blockbench
     blender
     pavucontrol
+    inputs.sonora.packages.${stdenv.hostPlatform.system}.sonora-bin
 
     # Gnome-ish
     decibels
@@ -68,6 +69,8 @@
     resvg
     webp-pixbuf-loader
   ];
-  programs.fish.enable = true;
-  programs.nix-ld.enable = true;
+  programs = {
+    fish.enable = true;
+    nix-ld.enable = true;
+  };
 }

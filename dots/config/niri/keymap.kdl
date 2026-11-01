@@ -17,7 +17,6 @@ binds {
   Mod+Space         { spawn-sh "noctalia msg panel-toggle launcher"; }
   XF86Search        { spawn-sh "noctalia msg panel-toggle launcher"; }
   Mod+V             { spawn-sh "noctalia msg panel-toggle clipboard"; }
-  Mod+M             { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; }
   Mod+Shift+W       { spawn-sh "noctalia msg panel-toggle wallpaper"; }
   Mod+Ctrl+W        { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
   Ctrl+Alt+Delete   { spawn-sh "noctalia msg panel-toggle session"; }
@@ -51,7 +50,8 @@ binds {
   Mod+Ctrl+C { center-visible-columns; }
 
   Mod+F       { maximize-column; }
-  Mod+Shift+M { maximize-window-to-edges; }
+  Mod+M       { maximize-window-to-edges; }
+  Mod+Shift+M { expand-column-to-available-width; }
   Mod+Shift+F { fullscreen-window; }
 
   Mod+T       { toggle-window-floating; }

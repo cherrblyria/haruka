@@ -1076,7 +1076,6 @@ panel_open_near_click = false
 [plugin_settings."gustav0ar/drive-health"]
 drives_open_near_click = false
 drives_placement = "attached"
-system_collector_enabled = true
 
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
@@ -1102,13 +1101,11 @@ auto_update = "official"
 enabled = [
     "dotnetrob/cat",
     "noctalia/kaomoji",
-    "noctalia/notes",
     "noctalia/screen_recorder",
     "noctalia/wallhaven",
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
     "salemsayed/niri-active-workspace",
-    "gustav0ar/drive-health",
     "aristides/udiskie"
 ]
 
@@ -1250,13 +1247,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Pixiv/122513935_p0.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-rq6151.jpg"
 
 [widget.active-workspace]
 glyph = ""

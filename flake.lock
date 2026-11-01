@@ -215,6 +215,22 @@
     },
     "nixpkgs_4": {
       "locked": {
+        "lastModified": 1790822859,
+        "narHash": "sha256-69xHQhAeMAD2wDXO7T2pcOZIF9Sga2W+JkmY2a11Ops=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1792116957,
         "narHash": "sha256-EjZqHKObBfIOeHZnMRVV87HB3pPq/WBkmRJWyFxmZu8=",
         "owner": "NixOS",
@@ -229,7 +245,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_6": {
       "locked": {
         "lastModified": 1792773339,
         "narHash": "sha256-17eNBI5Khe4JZaRkL5hRGPWf8MZ6qv+bWAr4V8YeKBw=",
@@ -289,13 +305,54 @@
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
         "noctalia-greeter": "noctalia-greeter",
+        "sonora": "sonora",
         "sops-nix": "sops-nix",
         "spicetify-nix": "spicetify-nix"
       }
     },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "sonora",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1789196581,
+        "narHash": "sha256-yJr1Bt4fKkKIpPYbsKGqJ0VFdoDnURgRwuffmBQ2WzY=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "228ecefb6329d5a531b77b46b581a2f0c26ee056",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sonora": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1793457413,
+        "narHash": "sha256-Gi+B09l8oSP7cRhiMWQKhx7msW5Gs4HCKsD48arNJ/g=",
+        "owner": "sonorahq",
+        "repo": "sonora",
+        "rev": "20b253efc18169b5b2e5118ea478f1d276ced23b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sonorahq",
+        "repo": "sonora",
+        "type": "github"
+      }
+    },
     "sops-nix": {
       "inputs": {
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1793052255,
@@ -313,7 +370,7 @@
     },
     "spicetify-nix": {
       "inputs": {
-        "nixpkgs": "nixpkgs_5",
+        "nixpkgs": "nixpkgs_6",
         "systems": "systems"
       },
       "locked": {
