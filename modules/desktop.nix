@@ -1,10 +1,13 @@
+{ pkgs, ... }:
 {
-  programs = {
-    # Sreenrecorder
-    gpu-screen-recorder.enable = true;
+  environment.systemPackages = with pkgs; [
+    mizuki-psekai-cursor # Cursor
+    wl-clipboard # Clipboard
+  ];
 
-    # Window Manager
-    niri.enable = true;
+  programs = {
+    gpu-screen-recorder.enable = true; # Sreenrecorder
+    niri.enable = true; # Window Manager
 
     # Noctalia
     noctalia = {

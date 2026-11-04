@@ -20,7 +20,7 @@
     # I want to play PC game on my tablet
     sunshine = {
       enable = true;
-      autoStart = true;
+      autoStart = false;
       openFirewall = true;
     };
   };

@@ -1,7 +1,4 @@
-{ config, dots, ... }:
-let
-  mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dots}/${path}";
-in
+{ mkSymlink, ... }:
 {
   qt.enable = true;
   qt.platformTheme.name = "qtct";

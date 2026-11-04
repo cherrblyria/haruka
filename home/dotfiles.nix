@@ -1,7 +1,4 @@
-{ config, dots, ... }:
-let
-  mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dots}/${path}";
-in
+{ mkSymlink, ... }:
 {
   xdg.configFile = {
     # Krita/OTD

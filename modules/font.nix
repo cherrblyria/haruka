@@ -13,7 +13,7 @@
       noto-fonts-color-emoji
 
       # Install fonts from assets dir
-      (pkgs.runCommand "my-fonts" { } ''
+      (pkgs.runCommand "haruka-font-pack" { } ''
         mkdir -p $out/share/fonts/truetype
         cp -r ${../assets/fonts}/* $out/share/fonts/truetype/
       '')

@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  dots,
-  ...
-}:
+{ mkSymlink, pkgs, ... }:
 {
   xdg.portal = {
     enable = true;
@@ -19,8 +14,7 @@
       "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
     };
   };
-  xdg.configFile."mimeapps.list".source =
-    config.lib.file.mkOutOfStoreSymlink "${dots}/config/mimeapps.list";
+  xdg.configFile."mimeapps.list".source = mkSymlink "config/mimeapps.list";
 
   services.gnome-keyring.enable = true;
 }

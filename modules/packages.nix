@@ -1,10 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    # WM/Shell
-    mizuki-psekai-cursor
-    wl-clipboard
-
     # CLI/TUI
     eza
     fd

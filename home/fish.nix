@@ -38,14 +38,13 @@
       lg = "lazygit";
 
       # File management
-      b = "nix run nixpkgs#bat -Pp";
-      cp = "cp -i";
       mk = "touch";
+      tch = "touch";
       mkd = "mkdir";
       mkdir = "mkdir -pv";
+      cp = "cp -i";
       mv = "mv -i";
       rm = "rm -i";
-      tch = "touch";
 
       grep = "grep --color=auto";
       rg = "rg --color=always";

@@ -1,7 +1,13 @@
-{ lib, dots, ... }:
+{
+  lib,
+  dots,
+  config,
+  ...
+}:
 let
   entries = builtins.readDir ./.;
   homeDirectory = "/home/cherr";
+  mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dots}/${path}";
 in
 {
   home-manager = {
@@ -9,7 +15,10 @@ in
     useUserPackages = true;
     backupFileExtension = "backup";
     users.cherr = {
-      _module.args.dots = dots;
+      _module.args = {
+        dots = dots;
+        mkSymlink = mkSymlink;
+      };
       home = {
         username = "cherr";
         inherit homeDirectory;
