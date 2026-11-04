@@ -16,8 +16,8 @@ in
     backupFileExtension = "backup";
     users.cherr = {
       _module.args = {
-        dots = dots;
-        mkSymlink = mkSymlink;
+        inherit dots;
+        inherit mkSymlink;
       };
       home = {
         username = "cherr";
