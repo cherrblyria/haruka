@@ -36,7 +36,6 @@
 
     # Moosic
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    sonora.url = "github:sonorahq/sonora";
 
     # Gaming
     nix-gaming.url = "github:fufexan/nix-gaming";

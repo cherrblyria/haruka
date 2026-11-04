@@ -201,7 +201,7 @@ widget_order = [
         bands = 72
         centered = false
         color_1 = "primary"
-        color_2 = "on_primary_container"
+        color_2 = "tertiary"
         mirrored = true
         reversed = false
         show_wave = false
@@ -1256,13 +1256,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-9mjoy1.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-9mjoy1.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8vzro.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-9mjoy1.png"
 
 [widget.active-workspace]
 glyph = ""

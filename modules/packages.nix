@@ -22,7 +22,6 @@
     blockbench
     blender
     pavucontrol
-    inputs.sonora.packages.${stdenv.hostPlatform.system}.sonora-bin
 
     # Gnome-ish
     decibels
