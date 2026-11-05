@@ -1,13 +1,10 @@
 {
   imports = [
-    ./core.nix
     ./desktop.nix
     ./environment.nix
     ./font.nix
     ./games.nix
     ./keyd.nix
-    ./locale.nix
-    ./network.nix
     ./nh.nix
     ./overlays.nix
     ./packages.nix
@@ -15,6 +12,7 @@
     ./sops.nix
     ./spicetify.nix
     ./syncthing.nix
+    ./system.nix
     ./users.nix
   ];
 }
