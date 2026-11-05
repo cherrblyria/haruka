@@ -1,7 +1,9 @@
 { mkSymlink, ... }:
 {
-  qt.enable = true;
-  qt.platformTheme.name = "qtct";
+  qt = {
+    enable = true;
+    platformTheme.name = "qtct";
+  };
 
   xdg.configFile = {
     "qt6ct/qt6ct.conf".source = mkSymlink "config/qt6ct/qt6ct.conf";
