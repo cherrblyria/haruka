@@ -1,7 +1,7 @@
-{ lib, dots, osConfig, ... }:
+{ config, lib, dots, ... }:
 let
   entries = builtins.readDir ./.;
-  homeDirectory = osConfig.users.users.cherr.home;
+  homeDirectory = config.users.users.cherr.home;
 in
 {
   home-manager = {
