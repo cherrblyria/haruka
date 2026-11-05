@@ -1,4 +1,4 @@
-{ lib, dots, ... }:
+{ lib, dots, osConfig, ... }:
 let
   entries = builtins.readDir ./.;
   home.homeDirectory = osConfig.users.users.cherr.home;
