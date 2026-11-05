@@ -26,6 +26,11 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 - [Hatsune Miku:Coloful Stage](https://www.colorfulstage.com/media/download): Mizuki cursor
 - [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic): ASCII Arts
 
+| Asset | Source |
+| --- | --- |
+| [assets/images/herta.png](assets/images/herta.png) | https://m.hoyolab.com/#/article/36359597 |
+
+
 ## • Acknowledgment • Thanks •
 
 - [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorial
