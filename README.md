@@ -16,12 +16,14 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 
 ## • Acknowledgment •
 
+- [@cherrblyria](https://github.com/cherrblyria): ...
 - [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorial
 - [end_4's illogical impulse](https://github.com/end-4/dots-hyprland): Some beautiful dot files
 - [Noctalia's Community](https://discord.com/invite/aU2vzNsQPc)
 - [Noctalia](https://noctalia.dev/): A beautiful and easy-to-use desktop shell and login screen
 - [Niri](https://github.com/niri-wm/niri): A scrolling window manager that just works
 - [win2xcur](https://github.com/quantum5/win2xcur): A simple tools to convert Windows cursor to XCursor format.
+- [Claude](https://claude.ai/) & [ChatGPT](https://chatgpt.com/): Kinda help me learn Nix/NixOS
 
 <!--
 ## • Inspiration/Copying •
