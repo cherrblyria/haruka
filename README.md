@@ -19,16 +19,18 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 As I said at the beginning I make this for _myself_ so just take what you want, you will have to modify it anyway.
 
-## • Credit • Inspiration • Copying •
+## • Inspiration • Copying •
 
 - [end_4's illogical impulse](https://github.com/end-4/dots-hyprland): Starship prompt design
-- [Google Fonts](https://fonts.google.com/): Well.. fonts
-- [Hatsune Miku:Coloful Stage](https://www.colorfulstage.com/media/download): Mizuki cursor
-- [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic): ASCII Arts
+
+## • Credit •
 
 | Asset | Source |
 | --- | --- |
-| [assets/images/herta.png](assets/images/herta.png) | https://m.hoyolab.com/#/article/36359597 |
+| [assets/images/herta.png](assets/images/herta.png) | [Hoyolab](https://m.hoyolab.com/#/article/36359597) |
+| [assets/cursors/mizuki-psekai-cursor](assets/cursors/mizuki-psekai-cursor) | [Hatsune Miku:Coloful Stage](https://www.colorfulstage.com/media/download) |
+| [assets/arts](assets/arts) | [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic) |
+| [assets/fonts](assets/fonts) | [Google Fonts](https://fonts.google.com/) |
 
 
 ## • Acknowledgment • Thanks •
