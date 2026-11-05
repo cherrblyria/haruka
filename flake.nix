@@ -50,11 +50,7 @@
     {
       nixosConfigurations.yozora = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-
-        specialArgs = {
-          inherit inputs;
-          dots = "/home/cherr/haruka/dots";
-        };
+        specialArgs = { inherit inputs; };
 
         modules = [
           inputs.home-manager.nixosModules.home-manager

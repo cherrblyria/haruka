@@ -31,12 +31,10 @@
 
     # Dev
     direnv
-    uv
     gh
-
-    # NIX
-    nixfmt-tree
     nixd
+    nixfmt
+    uv
 
     # Archive
     unzip

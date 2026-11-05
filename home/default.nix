@@ -1,6 +1,7 @@
-{ config, dots, ... }:
+{ config, ... }:
 let
   homeDirectory = config.users.users.cherr.home;
+  dots = "/home/cherr/haruka/dots";
 in
 {
   home-manager = {
