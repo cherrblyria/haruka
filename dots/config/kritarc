@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=1
+ArtColorSel.Light=0
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
 ArtColorSel.SelColorH=0
 ArtColorSel.SelColorS=0
-ArtColorSel.SelColorX=1
+ArtColorSel.SelColorX=0
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -50,8 +50,8 @@ Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
 LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
-LastColorHistory=<!DOCTYPE LastColorHistory>\n<colors>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.501960813999176" g="0.501960813999176" r="0.501960813999176" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.501960813999176" g="0.501960813999176" r="0.501960813999176" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.549019634723663" g="0.549019634723663" r="0.549019634723663" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.709803938865662" g="0.658823549747467" r="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.980392158031464" g="0.807843148708344" r="0.356862753629684" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.0784313753247261" g="0.0784313753247261" r="0.0784313753247261" space="sRGB-elle-V2-srgbtrc.icc"/>\n <Gray g="1" space="Gray-D50-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-g10.icc"/>\n</colors>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
+LastColorHistory=<!DOCTYPE LastColorHistory>\n<colors>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="1" g="1" r="1" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.501960813999176" g="0.501960813999176" r="0.501960813999176" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.501960813999176" g="0.501960813999176" r="0.501960813999176" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.549019634723663" g="0.549019634723663" r="0.549019634723663" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.709803938865662" g="0.658823549747467" r="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.980392158031464" g="0.807843148708344" r="0.356862753629684" space="sRGB-elle-V2-srgbtrc.icc"/>\n <RGB b="0.0784313753247261" g="0.0784313753247261" r="0.0784313753247261" space="sRGB-elle-V2-srgbtrc.icc"/>\n <Gray g="1" space="Gray-D50-elle-V2-srgbtrc.icc"/>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-g10.icc"/>\n</colors>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0" g="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
 LastPreset_-1=b) Basic-1
 LineSmoothingDelayDistance=50
 LineSmoothingDistanceKeepAspectRatio=true
@@ -491,7 +491,7 @@ yPosition=0
 [MainWindow][DockWidget OverviewDocker]
 DockArea=2
 Locked=false
-height=102
+height=104
 width=100
 xPosition=0
 yPosition=0
@@ -678,10 +678,8 @@ pinControls=true
 [RecentFiles]
 File1[$e]=$HOME/Pictures/LINE/1789035230811.jpg
 File2[$e]=$HOME/Projects/Krita/something.kra
-File3[$e]=$HOME/Pictures/100PINT/Pins/⏝ ﹙🎀﹚ ⏝ㅤ ꒰ა    _. mizuki
 Name1=1789035230811.jpg
 Name2=something.kra
-Name3=⏝ ﹙🎀﹚ ⏝ㅤ ꒰ა    _. mizuki
 maxRecentFileItems=100
 
 [SelectedTags]
