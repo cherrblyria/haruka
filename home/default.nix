@@ -18,7 +18,7 @@ in
         _module.args = { inherit dots mkSymlink; };
         home = {
           username = "cherr";
-          inhetit homeDirectory;
+          inherit homeDirectory;
           stateVersion = "26.11";
         };
         imports =
