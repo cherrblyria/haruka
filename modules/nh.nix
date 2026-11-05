@@ -6,7 +6,7 @@
     clean = {
       enable = true;
       dates = "saturday";
-      extraArgs = "--keep 3";
+      extraArgs = "--keep 2 --keep-since 7d";
     };
   };
 }
