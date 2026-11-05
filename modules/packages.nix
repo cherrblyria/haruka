@@ -35,7 +35,7 @@
     gh
 
     # NIX
-    nixfmt
+    nixfmt-tree
     nixd
 
     # Archive
