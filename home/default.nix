@@ -1,6 +1,7 @@
 { lib, dots, osConfig, ... }:
 let
   entries = builtins.readDir ./.;
+  homeDirectory = osConfig.users.users.cherr.home;
 in
 {
   home-manager = {
@@ -17,7 +18,7 @@ in
         _module.args = { inherit dots mkSymlink; };
         home = {
           username = "cherr";
-          homeDirectory = osConfig.users.users.cherr.home;
+          inhetit homeDirectory;
           stateVersion = "26.11";
         };
         imports =
