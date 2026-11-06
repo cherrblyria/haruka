@@ -95,6 +95,9 @@ warning_threshold = 30
     [battery.device."/org/freedesktop/UPower/devices/mouse_dev_FF_35_07_27_06_D1"]
     warning_threshold = 15
 
+[bluetooth]
+connection_notifications = true
+
 [calendar]
 enabled = true
 
@@ -1138,6 +1141,7 @@ corner_radius_scale = 2.0
 date_format = "%A, %d %B %Y"
 font_family = "Inter"
 input_borders = false
+niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
 panel_anchor_bar = "Main"
 password_style = "random"
@@ -1256,13 +1260,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/気づいてしまった想い_normal.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-6oev3w.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/気づいてしまった想い_normal.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-6oev3w.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/気づいてしまった想い_normal.png"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-6oev3w.jpg"
 
 [widget.active-workspace]
 glyph = ""
@@ -1373,8 +1377,8 @@ rotate_album_art = true
 title_scroll = "always"
 
     [widget.media.actions]
-    scroll_down = "media volume-down 2"
-    scroll_up = "media volume-up 2"
+    scroll_down = "media volume-down 5"
+    scroll_up = "media volume-up 5"
 
 [widget.notes]
 type = "noctalia/notes:notes"

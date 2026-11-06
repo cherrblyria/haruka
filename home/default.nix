@@ -1,7 +1,7 @@
-{ lib, dots, ... }:
+{ config, ... }:
 let
-  entries = builtins.readDir ./.;
-  homeDirectory = "/home/cherr";
+  homeDirectory = config.users.users.cherr.home;
+  dots = "${homeDirectory}/haruka/dots";
 in
 {
   home-manager = {
@@ -15,17 +15,18 @@ in
         mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dots}/${path}";
       in
       {
-        _module.args = { inherit dots mkSymlink; };
+        _module.args = { inherit mkSymlink; };
         home = {
           username = "cherr";
           inherit homeDirectory;
           stateVersion = "26.11";
         };
-        imports =
-          with lib;
-          map (f: ./. + "/${f}") (
-            filter (f: f != "default.nix" && hasSuffix ".nix" f) (builtins.attrNames entries)
-          );
+        imports = [
+          ./appearance.nix
+          ./dotfiles.nix
+          ./programs.nix
+          ./session.nix
+        ];
       };
   };
 }

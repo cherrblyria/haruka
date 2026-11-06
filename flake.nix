@@ -46,28 +46,23 @@
   };
 
   outputs =
-    { self, nixpkgs, ... }@inputs:
-    let
-      mkNixos =
-        dots:
-        nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs dots; };
-          modules = [
-            inputs.home-manager.nixosModules.home-manager
-            inputs.noctalia.nixosModules.default
-            inputs.noctalia-greeter.nixosModules.default
-            inputs.sops-nix.nixosModules.sops
-            inputs.spicetify-nix.nixosModules.spicetify
-
-            ./hardware-configuration.nix
-            ./home
-            ./modules
-          ];
-        };
-    in
+    { nixpkgs, ... }@inputs:
     {
-      nixosConfigurations.yozora = mkNixos "/home/cherr/haruka/dots";
-      nixosConfigurations.ci = mkNixos "${./dots}";
+      nixosConfigurations.yozora = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          inputs.home-manager.nixosModules.home-manager
+          inputs.noctalia.nixosModules.default
+          inputs.noctalia-greeter.nixosModules.default
+          inputs.sops-nix.nixosModules.sops
+          inputs.spicetify-nix.nixosModules.spicetify
+
+          ./hardware-configuration.nix
+          ./home
+          ./modules
+        ];
+      };
     };
 }
