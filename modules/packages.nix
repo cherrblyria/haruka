@@ -19,13 +19,13 @@ in
     wget
 
     # Desktop Apps
+    blender
+    blockbench
     brave-origin
     czkawka
     krita
-    vesktop
-    blockbench
-    blender
     pavucontrol
+    vesktop
 
     # Games
     (gamePkgs.osu-stable.override {
@@ -57,22 +57,22 @@ in
     uv
 
     # Archive
+    p7zip
     unzip
     zip
-    p7zip
 
     # GSteamer
-    gst_all_1.gstreamer
+    gst_all_1.gst-libav
+    gst_all_1.gst-plugins-bad
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-bad
     gst_all_1.gst-plugins-ugly
-    gst_all_1.gst-libav
+    gst_all_1.gstreamer
 
     # Drive
+    smartmontools
     udiskie
     udisks2
-    smartmontools
     util-linux
 
     # Media
