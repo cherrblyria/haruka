@@ -7,7 +7,6 @@
     ./packages.nix
     ./services.nix
     ./sops.nix
-    ./spicetify.nix
     ./system.nix
     ./users.nix
   ];

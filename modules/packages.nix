@@ -6,6 +6,7 @@
 }:
 let
   gamePkgs = inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system};
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
 in
 {
   environment.systemPackages = with pkgs; [
@@ -94,6 +95,31 @@ in
       gamescopeSession.enable = true;
       extraCompatPackages = with pkgs; [
         proton-ge-bin
+      ];
+    };
+
+    # Spicetify
+    spicetify = {
+      enable = true;
+      wayland = true;
+      windowManagerPatch = true;
+      enabledExtensions = with spicePkgs.extensions; [
+        adblockify
+        aiBandBlocker
+        autoSkipExplicit
+        copyToClipboard
+        hidePodcasts
+        shuffle
+      ];
+      enabledCustomApps = with spicePkgs.apps; [
+        lyricsPlus
+        ncsVisualizer
+      ];
+      enabledSnippets = [
+        "removeGradient"
+        "modernScrollbar"
+        "prettyLyrics"
+        "pointer"
       ];
     };
 
