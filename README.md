@@ -5,7 +5,7 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 <h2 align="center">• Screenshots •</h2>
 
-| <img alt="Lockscreen" src="https://github.com/user-attachments/assets/12dd9e38-1554-4509-aed1-1fd05c7736ca" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/b54602c5-d9b8-4b05-938b-c8baffc60923" /> |
+| <img src="https://github.com/user-attachments/assets/6c91afba-48e0-435d-bcd5-8c678f873111" /> | <img src="https://github.com/user-attachments/assets/657bcce6-dce5-4615-aa0e-52df01d5cda0" /> |
 | --- | --- |
 
 _wallpaper made by me :3_
