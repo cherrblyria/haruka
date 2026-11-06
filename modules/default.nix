@@ -1,7 +1,6 @@
 {
   imports = [
     ./desktop.nix
-    ./environment.nix
     ./font.nix
     ./overlays.nix
     ./packages.nix
