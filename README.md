@@ -3,18 +3,18 @@
 This is _my_ daily driver NixOS configuration.\
 It's just a simple one machine config w/ flake and simple modular configs.
 
-## • Screenshots •
+<h2 align="center">• Screenshots •</h2>
 
 | <img alt="Lockscreen" src="https://github.com/user-attachments/assets/12dd9e38-1554-4509-aed1-1fd05c7736ca" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/b54602c5-d9b8-4b05-938b-c8baffc60923" /> |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 
 _wallpaper made by me :3_
 
-## • Installation •
+<h2 align="center">• Installation •</h2>
 
 As I said at the beginning I make this for _myself_ so just take what you want, you will have to modify it anyway.
 
-## • Acknowledgment •
+<h2 align="center">• Acknowledgment •</h2>
 
 - [@cherrblyria](https://github.com/cherrblyria): ...
 - [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorial
@@ -31,7 +31,7 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 - 
 -->
 
-## • Credit •
+<h2 align="center">• Credit •</h2>
 
 | Asset | Source |
 | --- | --- |
