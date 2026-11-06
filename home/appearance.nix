@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, mkSymlink, ... }:
 {
+  # Cursor
   home = {
-    # Cursor
     pointerCursor = {
       enable = true;
       gtk.enable = true;
@@ -20,9 +20,21 @@
       name = "adw-gtk3";
       package = pkgs.adw-gtk3;
     };
+
     iconTheme = {
       name = "WhiteSur-grey";
       package = pkgs.whitesur-icon-theme.override { themeVariants = [ "grey" ]; };
     };
+  };
+
+  # QT
+  qt = {
+    enable = true;
+    platformTheme.name = "qtct";
+  };
+
+  xdg.configFile = {
+    "qt6ct/qt6ct.conf".source = mkSymlink "config/qt6ct/qt6ct.conf";
+    "qt5ct/qt5ct.conf".source = mkSymlink "config/qt5ct/qt5ct.conf";
   };
 }

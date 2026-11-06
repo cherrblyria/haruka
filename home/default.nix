@@ -1,7 +1,7 @@
 { config, ... }:
 let
   homeDirectory = config.users.users.cherr.home;
-  dots = "/home/cherr/haruka/dots";
+  dots = "${homeDirectory}/haruka/dots";
 in
 {
   home-manager = {
@@ -22,16 +22,11 @@ in
           stateVersion = "26.11";
         };
         imports = [
+          ./appearance.nix
           ./dotfiles.nix
           ./fish.nix
-          ./git.nix
-          ./gtk.nix
-          ./kitty.nix
-          ./niri.nix
           ./programs.nix
-          ./qt.nix
-          ./starship.nix
-          ./xdg.nix
+          ./session.nix
         ];
       };
   };
