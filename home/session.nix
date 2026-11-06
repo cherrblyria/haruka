@@ -1,5 +1,10 @@
-{ mkSymlink, pkgs, ... }:
+{ pkgs, ... }:
 {
+  # Niri
+  wayland.windowManager.niri.enable = true;
+  xsession.enable = true;
+
+  # Xdg
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
@@ -14,7 +19,7 @@
       "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
     };
   };
-  xdg.configFile."mimeapps.list".source = mkSymlink "config/mimeapps.list";
 
+  # Keyring
   services.gnome-keyring.enable = true;
 }

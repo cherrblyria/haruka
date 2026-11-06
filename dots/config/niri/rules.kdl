@@ -31,7 +31,6 @@ window-rule {
   match app-id=r#"(?i)^ai\.opencode\.desktop$"#
   match app-id=r#"^md\.obsidian\.Obsidian$"#
   match app-id="brave-origin"
-  match app-id="code"
   match app-id="spotify"
   match app-id="steam"
   match app-id="vesktop"
@@ -43,6 +42,7 @@ window-rule {
 window-rule {
   match app-id="blockbench"
   match app-id="blender"
+  match app-id="code"
   match app-id=r#"org\.kde\.krita"#
 
   open-maximized-to-edges false
