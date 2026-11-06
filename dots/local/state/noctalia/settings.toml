@@ -1373,8 +1373,8 @@ rotate_album_art = true
 title_scroll = "always"
 
     [widget.media.actions]
-    scroll_down = "media volume-down 2"
-    scroll_up = "media volume-up 2"
+    scroll_down = "media volume-down 5"
+    scroll_up = "media volume-up 5"
 
 [widget.notes]
 type = "noctalia/notes:notes"
