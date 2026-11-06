@@ -6,7 +6,7 @@ It's just a simple one machine config w/ flake and simple modular configs.
 <h2 align="center">• Screenshots •</h2>
 
 | <img alt="Lockscreen" src="https://github.com/user-attachments/assets/12dd9e38-1554-4509-aed1-1fd05c7736ca" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/b54602c5-d9b8-4b05-938b-c8baffc60923" /> |
-| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 
 _wallpaper made by me :3_
 
@@ -19,19 +19,9 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 - [@cherrblyria](https://github.com/cherrblyria): ...
 - [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorial
 - [end_4's illogical impulse](https://github.com/end-4/dots-hyprland): Some beautiful dot files
-- [Noctalia's Community](https://discord.com/invite/aU2vzNsQPc)
-- [Noctalia](https://noctalia.dev/): A beautiful and easy-to-use desktop shell and login screen
-- [Niri](https://github.com/niri-wm/niri): A scrolling window manager that just works
-- [win2xcur](https://github.com/quantum5/win2xcur): A simple tools to convert Windows cursor to XCursor format.
-- [Claude](https://claude.ai/) & [ChatGPT](https://chatgpt.com/): Kinda help me learn Nix/NixOS
+- [Noctalia's Community](https://discord.com/invite/aU2vzNsQPc): Give me a lot of ricing inspirations
 
-<!--
-## • Inspiration/Copying •
-
-- 
--->
-
-<h2 align="center">• Credit •</h2>
+<h2 align="center">• Credits •</h2>
 
 | Asset | Source |
 | --- | --- |
