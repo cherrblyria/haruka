@@ -17,7 +17,7 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 <h2 align="center">• Acknowledgment •</h2>
 
 - [@cherrblyria](https://github.com/cherrblyria): ...
-- [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorial
+- [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorials
 - [end_4's illogical impulse](https://github.com/end-4/dots-hyprland): Some beautiful dot files
 - [Noctalia's Community](https://discord.com/invite/aU2vzNsQPc): Give me a lot of ricing inspirations
 
