@@ -25,7 +25,5 @@ in
       "prettyLyrics"
       "pointer"
     ];
-    theme = spicePkgs.themes.default;
-    # colorScheme = "";
   };
 }

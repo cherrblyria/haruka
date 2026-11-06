@@ -74,7 +74,6 @@
         # Programs
         f = "fzf";
         g = "git";
-        lg = "lazygit";
 
         # File management
         mk = "touch";
