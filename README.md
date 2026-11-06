@@ -3,22 +3,29 @@
 This is _my_ daily driver NixOS configuration.\
 It's just a simple one machine config w/ flake and simple modular configs.
 
-#### Screenshots
+<h2 align="center">• Screenshots •</h2>
 
 | <img alt="Lockscreen" src="https://github.com/user-attachments/assets/12dd9e38-1554-4509-aed1-1fd05c7736ca" /> | <img alt="Desktop" src="https://github.com/user-attachments/assets/b54602c5-d9b8-4b05-938b-c8baffc60923" /> |
-| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| --- | --- |
 
-##### In these pics
+_wallpaper made by me :3_
 
-- Shell: [Noctalia](https://noctalia.dev/)
-- WM: [Niri](https://github.com/niri-wm/niri)
-- Wallpaper: made by me :3
-- Music: [สุรสีห์ อิทธิกุล - ปราสาททราย](https://open.spotify.com/track/2VmWsYUlnS3af8FOAyHS8k)
+<h2 align="center">• Installation •</h2>
 
-#### Assets credits
+As I said at the beginning I make this for _myself_ so just take what you want, you will have to modify it anyway.
 
-| Items  | Description                                   | Source                                                                                                                        |
-| ------ | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Images | (The) Herta                                   | Random [pins](https://www.pinterest.com/search/pins/?q=the%20herta%20png)                                                     |
-| Fonts  | GoogleSans, RougeScript, SendFlowers and more | [Google Fonts](https://fonts.google.com/)                                                                                     |
-| Cursor | Mizuki Cursor                                 | [PJSK (Offical)](https://www.colorfulstage.com/media/download) / [Unoffical Linux port](https://www.gnome-look.org/p/2364244) |
+<h2 align="center">• Acknowledgment •</h2>
+
+- [@cherrblyria](https://github.com/cherrblyria): ...
+- [@vimjoyer](https://youtube.com/@vimjoyer): Amazing Nix/NixOS tutorials
+- [end_4's illogical impulse](https://github.com/end-4/dots-hyprland): Some beautiful dot files
+- [Noctalia's Community](https://discord.com/invite/aU2vzNsQPc): Give me a lot of ricing inspirations
+
+<h2 align="center">• Credits •</h2>
+
+| Asset | Source |
+| --- | --- |
+| [assets/images/herta*](assets/images) | [Honkai: Star Rail](https://hsr.hoyoverse.com/en-us/) |
+| [assets/cursors/mizuki-psekai-cursor](assets/cursors/mizuki-psekai-cursor) | [Hatsune Miku: Colorful Stage!](https://www.colorfulstage.com/media/download) |
+| [assets/arts](assets/arts) | [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic) |
+| [assets/fonts](assets/fonts) | [Google Fonts](https://fonts.google.com/) |
