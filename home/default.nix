@@ -24,7 +24,6 @@ in
         imports = [
           ./appearance.nix
           ./dotfiles.nix
-          ./fish.nix
           ./programs.nix
           ./session.nix
         ];
