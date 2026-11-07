@@ -6,9 +6,12 @@ It's just a simple one machine config w/ flake and simple modular configs.
 <h2 align="center">• Screenshots •</h2>
 
 | <img src="https://github.com/user-attachments/assets/6c91afba-48e0-435d-bcd5-8c678f873111" /> | <img src="https://github.com/user-attachments/assets/657bcce6-dce5-4615-aa0e-52df01d5cda0" /> |
-| --- | --- |
+| :---: | :---: |
+| Polaroid frame inspired lockscreen | Notch style bar |
+| <img src="https://github.com/user-attachments/assets/1fe35d54-3203-42ef-b314-fa9cb6ec7a54" /> | |
+| Windows 11 like bar | |
 
-_wallpaper made by me :3_
+
 
 <h2 align="center">• Installation •</h2>
 
