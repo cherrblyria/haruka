@@ -9,12 +9,13 @@ blur_intensity = 0.29999999999999999
 enabled = true
 
 [bar]
-order = [ "Main", "Workspace-OSD", "Windows-11" ]
+order = [ "Main", "Windows-11", "Workspace-OSD" ]
 
     [bar.Main]
     capsule_border = "outline_variant"
     capsule_opacity = 0.24999999441206455
-    center = [ "cat", "clock", "anchored_separator", "date" ]
+    center = [ "cat", "clock", "Anchored_Separator", "date" ]
+    enabled = false
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     padding = 6
@@ -39,7 +40,7 @@ order = [ "Main", "Workspace-OSD", "Windows-11" ]
         enabled = true
         fill = "surface_container"
         id = "g4"
-        members = [ "tray", "status", "summary", "separator", "clipboard", "notes_2", "wallhaven", "brightness", "volume" ]
+        members = [ "tray", "status", "Separator", "wallhaven", "clipboard", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -53,15 +54,15 @@ order = [ "Main", "Workspace-OSD", "Windows-11" ]
         id = "g1"
         members = [
             "launcher",
-            "separator",
+            "Separator",
             "workspaces",
-            "separator",
-            "center_button",
-            "float_button",
-            "maximize_button",
-            "fullscreen_button",
-            "quit_button",
-            "separator"
+            "Separator",
+            "Center",
+            "Float",
+            "Maximize",
+            "Fullscreen",
+            "Quit",
+            "Separator"
         ]
         opacity = 0.0
         padding = 0.0
@@ -70,19 +71,18 @@ order = [ "Main", "Workspace-OSD", "Windows-11" ]
     background_opacity = 0.96999997831881046
     center = [ "launcher", "file-search", "taskbar" ]
     concave_edge_corners = false
-    enabled = true
-    end = [ "clock" ]
+    end = [ "tray", "Win11_Network", "Win11_Volume", "Win11_Battery", "Win11_Clock", "Win11_Notifications" ]
     margin_ends = 0
     position = "bottom"
     radius = 0
-    start = []
+    start = [ "weather" ]
     thickness = 36
 
     [bar.Workspace-OSD]
     auto_hide = true
     background_opacity = 0.96999997831881046
     border_width = 1.0
-    center = [ "workspace_icon", "workspace_text", "active-workspace" ]
+    center = [ "Icon_Workspace", "Text_Workspace", "active-workspace" ]
     end = []
     margin_edge = 6
     margin_ends = 576
@@ -1102,6 +1102,8 @@ wallpaper_dir = "/home/cherr/Wallpapers"
 
 [plugin_settings."nightwatch75/file-search"]
 max_results = 44
+panel_open_near_click = false
+space_enabled = false
 
 [plugin_settings."noctalia/notes"]
 notes_dir = "/home/cherr/Documents/Cherr's Sanctuary/00 Notes"
@@ -1158,7 +1160,6 @@ font_family = "Inter"
 input_borders = false
 niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
-panel_anchor_bar = "Main"
 password_style = "random"
 polkit_agent = true
 popup_borders = false
@@ -1190,12 +1191,12 @@ settings_expand_all_groups = true
     clipboard_placement = "attached"
     floating_offset = 6
     launcher_placement = "attached"
+    open_near_click_control_center = true
     polkit_placement = "attached"
     session_position = "center"
     wallpaper_show_names = false
 
     [shell.screen_corners]
-    enabled = true
     size = 35
 
     [shell.screenshot]
@@ -1270,29 +1271,104 @@ transition = [ "diamond", "disc", "honeycomb", "melt", "pixel", "stripes", "wipe
 transition_on_startup = true
 
     [wallpaper.automation]
-    enabled = true
     pause_on_fullscreen = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po75pp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po75pp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-po75pp.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
+
+[widget.Anchored_Separator]
+anchor = true
+color = "outline_variant"
+text = "|"
+type = "text"
+
+[widget.Center]
+glyph = "layout-align-middle"
+tooltip = "Center column"
+type = "custom_button"
+
+    [widget.Center.actions]
+    left = "exec niri msg action center-column"
+
+[widget.Float]
+glyph = "stack-pop"
+tooltip = "Toggle float window"
+type = "custom_button"
+
+    [widget.Float.actions]
+    left = "exec niri msg action toggle-window-floating"
+
+[widget.Fullscreen]
+glyph = "border-corners"
+tooltip = "Toggle fullscreen window"
+type = "custom_button"
+
+    [widget.Fullscreen.actions]
+    left = "exec niri msg action fullscreen-window"
+
+[widget.Icon_Workspace]
+color = "primary"
+glyph = "layout-grid"
+interactive = false
+type = "custom_button"
+
+[widget.Maximize]
+glyph = "arrows-maximize"
+tooltip = "Toggle maximize column"
+type = "custom_button"
+
+    [widget.Maximize.actions]
+    left = "exec niri msg action maximize-column"
+
+[widget.Quit]
+color = "error"
+glyph = "x"
+tooltip = "Close window"
+type = "custom_button"
+
+    [widget.Quit.actions]
+    left = "exec niri msg action close-window"
+
+[widget.Separator]
+color = "outline_variant"
+text = "|"
+type = "text"
+
+[widget.Text_Workspace]
+interactive = false
+text = "Workspace"
+type = "text"
+
+[widget.Win11_Battery]
+show_label = false
+type = "battery"
+
+[widget.Win11_Clock]
+format = "{:%H:%M\\n%m/%d/%Y}"
+type = "clock"
+
+[widget.Win11_Network]
+show_label = false
+type = "network"
+
+[widget.Win11_Notifications]
+type = "notifications"
+
+[widget.Win11_Volume]
+show_label = false
+type = "volume"
 
 [widget.active-workspace]
 glyph = ""
 interactive = false
 type = "salemsayed/niri-active-workspace:active-workspace"
-
-[widget.anchored_separator]
-anchor = true
-color = "outline_variant"
-text = "|"
-type = "text"
 
 [widget.audio_visualizer]
 color_2 = "tertiary"
@@ -1328,14 +1404,6 @@ enabled = false
 color = "on_surface_variant"
 type = "dotnetrob/cat:cat"
 
-[widget.center_button]
-glyph = "layout-align-middle"
-tooltip = "Center column"
-type = "custom_button"
-
-    [widget.center_button.actions]
-    left = "exec niri msg action center-column"
-
 [widget.clock]
 capsule_radius = "auto"
 color = "on_surface_variant"
@@ -1351,22 +1419,6 @@ format = "{:%a, %d %b}"
 [widget.file-search]
 type = "nightwatch75/file-search:file-search"
 
-[widget.float_button]
-glyph = "stack-pop"
-tooltip = "Toggle float window"
-type = "custom_button"
-
-    [widget.float_button.actions]
-    left = "exec niri msg action toggle-window-floating"
-
-[widget.fullscreen_button]
-glyph = "border-corners"
-tooltip = "Toggle fullscreen window"
-type = "custom_button"
-
-    [widget.fullscreen_button.actions]
-    left = "exec niri msg action fullscreen-window"
-
 [widget.launcher]
 custom_image = "/home/cherr/Projects/Noctalia/nix.png"
 custom_image_colorize = true
@@ -1377,14 +1429,6 @@ scale = 1.4000000000000001
 hide_when_off = true
 scale = 0.90000000000000002
 show_num_lock = false
-
-[widget.maximize_button]
-glyph = "arrows-maximize"
-tooltip = "Toggle maximize column"
-type = "custom_button"
-
-    [widget.maximize_button.actions]
-    left = "exec niri msg action maximize-column"
 
 [widget.media]
 art_size = 20
@@ -1401,31 +1445,14 @@ title_scroll = "always"
 [widget.notes]
 type = "noctalia/notes:notes"
 
-[widget.notes_2]
-type = "noctalia/notes:notes"
-
 [widget.notifications]
 hide_when_no_unread = true
 
 [widget.privacy]
 hide_inactive = true
 
-[widget.quit_button]
-color = "error"
-glyph = "x"
-tooltip = "Close window"
-type = "custom_button"
-
-    [widget.quit_button.actions]
-    left = "exec niri msg action close-window"
-
 [widget.recorder]
 type = "noctalia/screen_recorder:recorder"
-
-[widget.separator]
-color = "outline_variant"
-text = "|"
-type = "text"
 
 [widget.session]
 color = "error"
@@ -1433,15 +1460,13 @@ color = "error"
 [widget.status]
 type = "aristides/udiskie:status"
 
-[widget.summary]
-type = "gustav0ar/drive-health:summary"
-
 [widget.sysmon]
 show_value = false
 stat = "gpu_usage"
 
 [widget.taskbar]
 icon_scale = 1.6500000000000001
+pinned = [ "brave-origin", "org.gnome.Nautilus", "code", "spotify", "vesktop" ]
 show_all_outputs = true
 
 [widget.tray]
@@ -1461,17 +1486,6 @@ type = "noctalia/wallhaven:wallhaven"
 
 [widget.weather]
 show_temperature = false
-
-[widget.workspace_icon]
-color = "primary"
-glyph = "layout-grid"
-interactive = false
-type = "custom_button"
-
-[widget.workspace_text]
-interactive = false
-text = "Workspace"
-type = "text"
 
 [widget.workspaces]
 active_pill_size = 2.0
