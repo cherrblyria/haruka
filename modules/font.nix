@@ -3,9 +3,7 @@
   fonts = {
     packages = with pkgs; [
       adwaita-fonts
-      annotation-mono
       inter
-      julia-mono
       nerd-fonts.caskaydia-cove
       noto-fonts
       noto-fonts-cjk-sans
@@ -25,18 +23,16 @@
         "Noto Serif"
         "Noto Serif Thai"
         "Caskaydia Cove Nerd Font"
-        "JuliaMono"
       ];
       sansSerif = [
         "Inter"
-        "Google Sans"
+        "Noto Sans"
+        "Noto Sans Thai"
         "Caskaydia Cove Nerd Font"
-        "JuliaMono"
       ];
       monospace = [
         "Caskaydia Cove Nerd Font"
-        "JuliaMono"
-        "Chakra Petch"
+        "Noto Sans Thai Looped"
       ];
       emoji = [ "Noto Color Emoji" ];
     };

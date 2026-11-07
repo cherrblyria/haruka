@@ -15,7 +15,6 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
     capsule_border = "outline_variant"
     capsule_opacity = 0.24999999441206455
     center = [ "cat", "clock", "Anchored_Separator", "date" ]
-    enabled = false
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     padding = 6
@@ -71,6 +70,7 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
     background_opacity = 0.96999997831881046
     center = [ "launcher", "file-search", "taskbar" ]
     concave_edge_corners = false
+    enabled = false
     end = [ "tray", "Win11_Network", "Win11_Volume", "Win11_Battery", "Win11_Clock", "Win11_Notifications" ]
     margin_ends = 0
     position = "bottom"
@@ -83,6 +83,7 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
     background_opacity = 0.96999997831881046
     border_width = 1.0
     center = [ "Icon_Workspace", "Text_Workspace", "active-workspace" ]
+    enabled = false
     end = []
     margin_edge = 6
     margin_ends = 576
@@ -789,8 +790,8 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000015]
     box_height = 40.0
     box_width = 152.0
-    cx = 820.41326904296875
-    cy = 717.264892578125
+    cx = 821.1827392578125
+    cy = 717.385986328125
     output = "eDP-1"
     placement_height = 768.0
     placement_width = 1366.0
@@ -1197,6 +1198,7 @@ settings_expand_all_groups = true
     wallpaper_show_names = false
 
     [shell.screen_corners]
+    enabled = true
     size = 35
 
     [shell.screenshot]
@@ -1271,17 +1273,18 @@ transition = [ "diamond", "disc", "honeycomb", "melt", "pixel", "stripes", "wipe
 transition_on_startup = true
 
     [wallpaper.automation]
+    enabled = true
     pause_on_fullscreen = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-y85yld.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
 
 [widget.Anchored_Separator]
 anchor = true
