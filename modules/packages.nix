@@ -14,6 +14,7 @@ in
     eza
     fd
     fzf
+    ncdu
     imagemagick
     ripgrep
     wget
