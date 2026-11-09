@@ -1275,13 +1275,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
 
 [widget.Anchored_Separator]
 anchor = true
