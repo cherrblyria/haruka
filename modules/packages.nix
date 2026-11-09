@@ -24,6 +24,7 @@ in
     blockbench
     brave-origin
     czkawka
+    engrampa
     krita
     pavucontrol
     vesktop
@@ -42,12 +43,14 @@ in
 
     # Gnome-ish
     decibels
-    engrampa
+    gnome-calculator
+    gnome-clocks
     gnome-text-editor
     loupe
     nautilus
     papers
     showtime
+    snapshot
     sushi
 
     # Dev

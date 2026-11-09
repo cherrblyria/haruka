@@ -83,7 +83,6 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
     background_opacity = 0.96999997831881046
     border_width = 1.0
     center = [ "Icon_Workspace", "Text_Workspace", "active-workspace" ]
-    enabled = false
     end = []
     margin_edge = 6
     margin_ends = 576
@@ -1157,7 +1156,6 @@ clipboard_auto_paste = "off"
 clipboard_history_max_entries = 500
 corner_radius_scale = 2.0
 date_format = "%A, %d %B %Y"
-font_family = "Inter"
 input_borders = false
 niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
@@ -1192,7 +1190,6 @@ settings_expand_all_groups = true
     clipboard_placement = "attached"
     floating_offset = 6
     launcher_placement = "attached"
-    open_near_click_control_center = true
     polkit_placement = "attached"
     session_position = "center"
     wallpaper_show_names = false
@@ -1278,13 +1275,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-e8zmpk.jpg"
+    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-8g8wqy.jpg"
 
 [widget.Anchored_Separator]
 anchor = true
