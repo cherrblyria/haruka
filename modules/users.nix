@@ -5,11 +5,12 @@
     isNormalUser = true;
     description = "cherr";
     extraGroups = [
-      "networkmanager"
       "dialout"
-      "wheel"
-      "uinput"
       "input"
+      "networkmanager"
+      "uinput"
+      "video"
+      "wheel"
     ];
     initialPassword = "password";
   };
