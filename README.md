@@ -5,13 +5,13 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 <h2 align="center">• Screenshots •</h2>
 
-| <img src="https://github.com/user-attachments/assets/6c91afba-48e0-435d-bcd5-8c678f873111" /> | <img src="https://github.com/user-attachments/assets/657bcce6-dce5-4615-aa0e-52df01d5cda0" /> |
-| :---: | :---: |
-| Polaroid frame inspired lockscreen | Notch style bar |
-| <img src="https://github.com/user-attachments/assets/1fe35d54-3203-42ef-b314-fa9cb6ec7a54" /> | |
-| Windows 11 like bar | |
+| ![](docs/images/lockscreen.png) | ![](docs/images/desktop.png) |
+| :-----------------------------: | :--------------------------: |
+|  Polaroid inspired lockscreen   |       Notch style bar        |
+|   ![](docs/images/win11.png)    |                              |
+|       Windows 11 like bar       |                              |
 
-
+<i align="center">wallpaper from [Hatsune Miku: Colorful Stage!](https://www.colorfulstage.com/)</i>
 
 <h2 align="center">• Installation •</h2>
 
@@ -26,9 +26,9 @@ As I said at the beginning I make this for _myself_ so just take what you want, 
 
 <h2 align="center">• Credits •</h2>
 
-| Asset | Source |
-| --- | --- |
-| [assets/images/herta*](assets/images) | [Honkai: Star Rail](https://hsr.hoyoverse.com/en-us/) |
-| [assets/cursors/mizuki-psekai-cursor](assets/cursors/mizuki-psekai-cursor) | [Hatsune Miku: Colorful Stage!](https://www.colorfulstage.com/media/download) |
-| [assets/arts](assets/arts) | [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic) |
-| [assets/fonts](assets/fonts) | [Google Fonts](https://fonts.google.com/) |
+| Asset                                                                      | Source                                                                                                                                                         |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [assets/images/herta\*](assets/images)                                     | [Honkai: Star Rail](https://hsr.hoyoverse.com/en-us/)                                                                                                          |
+| [assets/cursors/mizuki-psekai-cursor](assets/cursors/mizuki-psekai-cursor) | [Hatsune Miku: Colorful Stage!](https://www.colorfulstage.com/media/download)                                                                                  |
+| [assets/arts](assets/arts)                                                 | [textfancy](https://textfancy.com/text-art/), [emojicombos](https://emojicombos.com/dot-art-generator), [cuteinternet](https://www.cuteinternet.com/aesthetic) |
+| [assets/fonts](assets/fonts)                                               | [Google Fonts](https://fonts.google.com/)                                                                                                                      |
