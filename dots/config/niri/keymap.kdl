@@ -18,7 +18,6 @@ binds {
   XF86Search        { spawn-sh "noctalia msg panel-toggle launcher"; }
   Mod+V             { spawn-sh "noctalia msg panel-toggle clipboard"; }
   Mod+Shift+W       { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-  Mod+Ctrl+W        { spawn-sh "noctalia msg panel-toggle noctalia/wallhaven:browser"; }
   Ctrl+Alt+Delete   { spawn-sh "noctalia msg panel-toggle session"; }
 
   // Control Center

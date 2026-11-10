@@ -39,7 +39,7 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
         enabled = true
         fill = "surface_container"
         id = "g4"
-        members = [ "tray", "status", "Separator", "wallhaven", "clipboard", "brightness", "volume" ]
+        members = [ "tray", "status", "Separator", "clipboard", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -118,7 +118,6 @@ enabled = true
     type = "google"
 
 [control_center]
-circular_avatar = false
 width = 800
 
     [[control_center.shortcuts]]
@@ -1130,7 +1129,6 @@ enabled = [
     "dotnetrob/cat",
     "noctalia/kaomoji",
     "noctalia/screen_recorder",
-    "noctalia/wallhaven",
     "noctalia/world_clock",
     "radimous/prismlauncher-instances",
     "salemsayed/niri-active-workspace",
@@ -1192,7 +1190,6 @@ settings_expand_all_groups = true
     launcher_placement = "attached"
     polkit_placement = "attached"
     session_position = "center"
-    wallpaper_show_names = false
 
     [shell.screen_corners]
     enabled = true
@@ -1264,7 +1261,7 @@ wallpaper_scheme = "m3-content"
     community_ids = [ "discord", "lazygit", "yazi" ]
 
 [wallpaper]
-directory = "~/Wallpapers"
+directory = "/home/cherr/Wallpapers/Project Sekai"
 edge_smoothness = 0.0
 transition = [ "diamond", "disc", "honeycomb", "melt", "pixel", "stripes", "wipe" ]
 transition_on_startup = true
@@ -1275,13 +1272,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Wallheaven/wallhaven-m3vxl8.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1480,9 +1477,6 @@ show_label = false
     [widget.volume.actions]
     scroll_down = "volume-down 2"
     scroll_up = "volume-up 2"
-
-[widget.wallhaven]
-type = "noctalia/wallhaven:wallhaven"
 
 [widget.weather]
 show_temperature = false
