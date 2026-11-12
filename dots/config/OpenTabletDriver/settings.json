@@ -91,11 +91,11 @@
             "Enable": true
           },
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.MultiKeyBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
             "Settings": [
               {
-                "Property": "Keys",
-                "Value": "Control+R"
+                "Property": "Key",
+                "Value": "Grave"
               }
             ],
             "Enable": true
@@ -147,6 +147,7 @@
         "WheelBindings": [],
         "DisablePressure": false,
         "DisableTilt": false,
+        "DisableRotation": false,
         "EnableDragBindings": false
       }
     }
