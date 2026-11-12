@@ -5,11 +5,11 @@ enable_sounds = true
 sound_volume = 0.89999997988343239
 
 [backdrop]
-blur_intensity = 0.29999999999999999
+blur_intensity = 0.12999999709427357
 enabled = true
 
 [bar]
-order = [ "Main", "Windows-11", "Workspace-OSD" ]
+order = [ "Main", "Windows-11" ]
 
     [bar.Main]
     capsule_border = "outline_variant"
@@ -33,19 +33,23 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
 
         [[bar.Main.capsule_group]]
         accordion = true
+        accordion_delay_ms = 0
         accordion_direction = "start"
+        accordion_duration = 250
         border = ""
         border_width = 1.0
         enabled = true
         fill = "surface_container"
         id = "g4"
-        members = [ "tray", "status", "Separator", "clipboard", "brightness", "volume" ]
+        members = [ "tray", "status", "clipboard", "Separator", "theme_mode", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
         [[bar.Main.capsule_group]]
         accordion = true
+        accordion_delay_ms = 0
         accordion_direction = "end"
+        accordion_duration = 250
         border = ""
         border_width = 1.0
         enabled = true
@@ -53,6 +57,8 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
         id = "g1"
         members = [
             "launcher",
+            "file_search_2",
+            "button",
             "Separator",
             "workspaces",
             "Separator",
@@ -78,26 +84,6 @@ order = [ "Main", "Windows-11", "Workspace-OSD" ]
     start = [ "weather" ]
     thickness = 36
 
-    [bar.Workspace-OSD]
-    auto_hide = true
-    background_opacity = 0.96999997831881046
-    border_width = 1.0
-    center = [ "Icon_Workspace", "Text_Workspace", "active-workspace" ]
-    end = []
-    margin_edge = 6
-    margin_ends = 576
-    padding = 0
-    panel_overlap = 0
-    position = "bottom"
-    radius = 80
-    reserve_space = false
-    shadow = false
-    start = []
-    thickness = 39
-
-        [bar.Workspace-OSD.dead_zone.actions]
-        right = "none"
-
 [battery]
 warning_threshold = 30
 
@@ -109,6 +95,9 @@ warning_threshold = 30
 
 [bluetooth]
 connection_notifications = true
+
+[brightness]
+minimum_brightness = 0.0099999997764825821
 
 [calendar]
 enabled = true
@@ -1076,6 +1065,7 @@ offset_x = 6
 offset_y = 6
 
 [osd]
+follow_focused_output = true
 hide_delay_ms = 1000
 offset_x = 6
 offset_y = 6
@@ -1083,6 +1073,10 @@ orientation = "vertical"
 position = "bottom_center"
 position_vertical = "center_right"
 scale = 0.85000000521540642
+
+[plugin_settings."3dprogramin/vscode"]
+clone_dir = "/home/cherr/Projects/Coding"
+editor = "code"
 
 [plugin_settings."aristides/udiskie"]
 manager_placement = "attached"
@@ -1100,8 +1094,8 @@ include_wallhaven_downloads = false
 wallpaper_dir = "/home/cherr/Wallpapers"
 
 [plugin_settings."nightwatch75/file-search"]
-max_results = 44
 panel_open_near_click = false
+show_hidden = true
 space_enabled = false
 
 [plugin_settings."noctalia/notes"]
@@ -1130,10 +1124,9 @@ enabled = [
     "noctalia/kaomoji",
     "noctalia/screen_recorder",
     "noctalia/world_clock",
-    "radimous/prismlauncher-instances",
-    "salemsayed/niri-active-workspace",
     "aristides/udiskie",
-    "nightwatch75/file-search"
+    "nightwatch75/file-search",
+    "3dprogramin/vscode"
 ]
 
     [[plugins.source]]
@@ -1252,7 +1245,7 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "dark"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
@@ -1272,13 +1265,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/あの日の諦め_after_training.png"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/あの日の諦め_after_training.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/両手いっぱいのお菓子_after_training.png"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/あの日の諦め_after_training.png"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1362,11 +1355,6 @@ type = "notifications"
 show_label = false
 type = "volume"
 
-[widget.active-workspace]
-glyph = ""
-interactive = false
-type = "salemsayed/niri-active-workspace:active-workspace"
-
 [widget.audio_visualizer]
 color_2 = "tertiary"
 interactive = false
@@ -1381,11 +1369,10 @@ width = 112
     scroll_up = "media next"
 
 [widget.battery]
-color = "#B8CE99"
+color = "on_surface"
 device = "/org/freedesktop/UPower/devices/battery_BAT0"
 display_mode = "graphic"
 hide_when_full = true
-hide_when_plugged = true
 scale = 0.85000000000000009
 
 [widget.brightness]
@@ -1393,6 +1380,10 @@ show_label = false
 
     [widget.brightness.actions]
     right = "nightlight-toggle"
+
+[widget.button]
+scale = 1.1500000000000001
+type = "3dprogramin/vscode:button"
 
 [widget.caffeine]
 enabled = false
@@ -1414,6 +1405,9 @@ color = "on_surface_variant"
 format = "{:%a, %d %b}"
 
 [widget.file-search]
+type = "nightwatch75/file-search:file-search"
+
+[widget.file_search_2]
 type = "nightwatch75/file-search:file-search"
 
 [widget.launcher]
@@ -1466,17 +1460,17 @@ icon_scale = 1.6500000000000001
 pinned = [ "brave-origin", "org.gnome.Nautilus", "code", "spotify", "vesktop" ]
 show_all_outputs = true
 
+[widget.theme_mode]
+color = "on_surface"
+
 [widget.tray]
 drawer = true
 drawer_columns = 5
 drawer_item_size = 18.0
 
-[widget.volume]
-show_label = false
-
-    [widget.volume.actions]
-    scroll_down = "volume-down 2"
-    scroll_up = "volume-up 2"
+[widget.volume.actions]
+scroll_down = "volume-down 2"
+scroll_up = "volume-up 2"
 
 [widget.weather]
 show_temperature = false
