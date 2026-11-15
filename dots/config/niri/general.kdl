@@ -14,9 +14,7 @@ blur {
 }
 
 overview {
-  workspace-shadow {
-    // off
-  }
+  zoom 0.75
 }
 
 layout {
@@ -36,7 +34,7 @@ layout {
     width 1
   }
   border {
-    // on
+    off
     width 1
   }
   shadow {
