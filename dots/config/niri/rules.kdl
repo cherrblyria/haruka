@@ -36,7 +36,7 @@ window-rule {
   match app-id="vesktop"
 
   open-maximized-to-edges false
-  default-column-width { proportion 0.92; }
+  default-column-width { proportion 0.93; }
 }
 
 window-rule {

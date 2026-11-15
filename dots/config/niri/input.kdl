@@ -18,4 +18,5 @@ input {
     accel-profile "flat"
   }
   trackpoint
+  workspace-auto-back-and-forth
 }

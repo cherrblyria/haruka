@@ -1074,13 +1074,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/お気に入りの服_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/お気に入りの服_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/お気に入りの服_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
