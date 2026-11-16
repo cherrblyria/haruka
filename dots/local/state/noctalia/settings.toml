@@ -1054,7 +1054,7 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "dark"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
@@ -1074,13 +1074,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Yoisaki Kanade/慣れない早起き_normal.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Yoisaki Kanade/慣れない早起き_normal.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/いたずら姉妹、参上！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Yoisaki Kanade/慣れない早起き_normal.webp"
 
 [widget.Anchored_Separator]
 anchor = true

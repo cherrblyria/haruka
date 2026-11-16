@@ -1,15 +1,15 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "type": "kitty-direct",
-    "source": "$NH_FLAKE/assets/images/herta.png",
-    "width": 30,
+    "type": "file",
+    "source": "$NH_FLAKE/assets/arts/owo.txt",
+    // "width": 30,
     "height": null,
     "padding": {
-      "top": 0,
+      "top": 1,
       "left": 0,
       "bottom": 0,
-      "right": 0
+      "right": 1
     },
     "printRemaining": true,
     "preserveAspectRatio": true,
