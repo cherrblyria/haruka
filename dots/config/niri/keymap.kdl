@@ -9,7 +9,8 @@ binds {
   Mod+P           allow-when-locked=true { spawn "noctalia" "msg" "dpms-off"; }
   Mod+Alt+L       allow-when-locked=true { spawn "noctalia" "msg" "session" "lock"; }
   Mod+Alt+W       allow-when-locked=true { spawn "noctalia" "msg" "wallpaper-random"; }
-  Mod+Shift+D     allow-when-locked=true { spawn "noctalia" "msg" "caffeine-toggle"; }
+  Mod+Shift+I     allow-when-locked=true { spawn "noctalia" "msg" "caffeine-toggle"; }
+  Mod+Shift+D     allow-when-locked=true { spawn "noctalia" "msg" "theme-mode-toggle"; }
   Mod+Shift+N     allow-when-locked=true { spawn "noctalia" "msg" "notification-dnd-toggle"; }
   Mod+Shift+C     allow-when-locked=true { spawn-sh "COLOR=$(niri msg pick-color | tail -n 1 | sed -e 's/Hex: //'); wl-copy ${COLOR}; noctalia msg notification-show 'Color picked' ${COLOR}"; }
 
