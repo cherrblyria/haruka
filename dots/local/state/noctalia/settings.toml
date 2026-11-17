@@ -1071,13 +1071,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/想いが重なる場所で_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/想いが重なる場所で_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hatsune Miku/想いが重なる場所で_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true

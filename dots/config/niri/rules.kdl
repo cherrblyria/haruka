@@ -17,9 +17,11 @@ window-rule {
   shadow { on; }
 }
 
-// Behavior
+// Open floating
 
 window-rule {
+  match app-id=r#"org.gnome.clocks"#
+  match app-id=r#"org.gnome.Calculator"#
   match app-id=r#"org\.gnome\.NautilusPreviewer"#
   match app-id=r#"org\.gnome\.Nautilus"# title=r#"(?i)^Open(.*)"#
 
@@ -67,11 +69,11 @@ window-rule {
 
 window-rule {
   match app-id="steam" title=r#"(?i)^Steam\sBig\sPicture\sMode$"#
-
   open-fullscreen true
 }
 
 // Picture in Picture
+
 window-rule {
   match title=r#"(?i)^picture\sin\spicture$"#
 
@@ -105,15 +107,10 @@ layer-rule {
   match namespace=r#"^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"#
   match namespace=r#"^noctalia-desktop-widget-(.*)$"#
 
-  background-effect {
-    xray false
-  }
+  background-effect { xray false; }
 }
 
 layer-rule {
   match namespace="noctalia-window-switcher"
-
-  background-effect {
-    blur false
-  }
+  background-effect { blur false; }
 }

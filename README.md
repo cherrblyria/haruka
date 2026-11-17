@@ -1,4 +1,4 @@
-![](assets/images/haruka-logo-desc.svg)
+![](docs/images/haruka-logo-desc.svg)
 
 This is _my_ daily driver NixOS configuration.\
 It's just a simple one machine config w/ flake and simple modular configs.
@@ -7,9 +7,9 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 | ![](docs/images/lockscreen.png) | ![](docs/images/desktop.png) |
 | :-----------------------------: | :--------------------------: |
-|  Polaroid inspired lockscreen   |       Notch style bar        |
-|   ![](docs/images/win11.png)    |                              |
-|       Windows 11 like bar       |                              |
+|         Notch style bar         | Polaroid inspired lockscreen |
+|  ![](docs/images/windows.png)   |  ![](docs/images/win11.png)  |
+|          Random stuff           |     Windows 11 like bar      |
 
 <i align="center">wallpaper from [Hatsune Miku: Colorful Stage!](https://www.colorfulstage.com/)</i>
 

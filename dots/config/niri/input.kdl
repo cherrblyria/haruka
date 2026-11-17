@@ -1,9 +1,7 @@
 input {
   focus-follows-mouse max-scroll-amount="33%"
   keyboard {
-    xkb {
-      layout "us,th"
-    }
+    xkb { layout "us,th"; }
     numlock
     repeat-delay 400
   }
