@@ -35,4 +35,10 @@
     # Noctalia
     "noctalia/settings.toml".source = mkSymlink "local/state/noctalia/settings.toml";
   };
+
+  xdg.dataFile = {
+    # Luciole scripts
+    "luciole/scripts/Set As Wallpaper".source =
+      mkSymlink "local/share/luciole/scripts/Set As Wallpaper";
+  };
 }

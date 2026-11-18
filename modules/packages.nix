@@ -28,6 +28,7 @@ in
     krita
     pavucontrol
     vesktop
+    inputs.luciole.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Games
     (gamePkgs.osu-stable.override {
@@ -47,11 +48,9 @@ in
     gnome-clocks
     gnome-text-editor
     loupe
-    nautilus
     papers
     showtime
     snapshot
-    sushi
 
     # Dev
     direnv

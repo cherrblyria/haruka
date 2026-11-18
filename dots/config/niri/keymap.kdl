@@ -1,7 +1,8 @@
 binds {
   // Launch
   Mod+Return      { spawn "kitty"; }
-  Mod+E           { spawn "nautilus" "-w"; }
+  // Mod+E           { spawn "nautilus" "-w"; }
+  Mod+E           { spawn "luciole"; }
   Mod+Shift+E     { spawn "kitty" "yazi"; }
   Mod+Shift+Comma { spawn "noctalia" "msg" "settings-open"; }
 

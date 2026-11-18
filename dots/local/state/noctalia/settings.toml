@@ -1,4 +1,4 @@
-config_version = 16
+config_version = 20
 
 [audio]
 enable_sounds = true
@@ -42,7 +42,7 @@ order = [ "Main", "Windows-11" ]
         enabled = true
         fill = "surface_container"
         id = "g4"
-        members = [ "tray", "status", "clipboard", "Separator", "theme_mode", "brightness", "volume" ]
+        members = [ "tray", "status", "clipboard", "Separator", "brightness", "volume" ]
         opacity = 0.0
         padding = 0.0
 
@@ -117,7 +117,13 @@ width = 800
     type = "caffeine"
 
     [[control_center.shortcuts]]
+    type = "dark_mode"
+
+    [[control_center.shortcuts]]
     type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "noctalia/screen_recorder:toggle"
 
 [desktop_widgets]
 schema_version = 2
@@ -883,6 +889,7 @@ scale = 0.85000000521540642
 [plugin_settings."3dprogramin/vscode"]
 clone_dir = "/home/cherr/Projects/Coding"
 editor = "code"
+recent_count = 7
 
 [plugin_settings."aristides/udiskie"]
 manager_placement = "attached"
@@ -1051,12 +1058,12 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "light"
+mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "niri", "qt" ]
     community_ids = [ "discord", "lazygit", "yazi" ]
 
 [wallpaper]
@@ -1071,13 +1078,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kusanagi Nene/夢をのせたメロディー_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1195,6 +1202,7 @@ enabled = false
 
 [widget.cat]
 color = "on_surface_variant"
+enable_scroll = false
 type = "dotnetrob/cat:cat"
 
 [widget.clock]
