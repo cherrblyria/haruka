@@ -7,7 +7,7 @@ It's just a simple one machine config w/ flake and simple modular configs.
 
 | ![](docs/images/lockscreen.png) | ![](docs/images/desktop.png) |
 | :-----------------------------: | :--------------------------: |
-|         Notch style bar         | Polaroid inspired lockscreen |
+|  Polaroid inspired lockscreen |       Notch style bar         | 
 |  ![](docs/images/windows.png)   |  ![](docs/images/win11.png)  |
 |          Random stuff           |     Windows 11 like bar      |
 
