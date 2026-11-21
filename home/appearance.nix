@@ -22,8 +22,8 @@
     };
 
     iconTheme = {
-      name = "WhiteSur-grey";
-      package = pkgs.whitesur-icon-theme.override { themeVariants = [ "grey" ]; };
+      name = "WhiteSur";
+      package = pkgs.whitesur-icon-theme;
     };
   };
 

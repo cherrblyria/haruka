@@ -1,8 +1,22 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   services = {
     dbus.enable = true;
     openssh.enable = true;
+
+    # UDev
+    udev.packages = [
+      (pkgs.writeTextFile {
+        name = "gravastar-webhid-rules";
+
+        text = ''
+          KERNEL=="hidraw*", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="fa09", TAG+="uaccess"
+          KERNEL=="hidraw*", ATTRS{idVendor}=="258a", ATTRS{idProduct}=="010c", TAG+="uaccess"
+        '';
+
+        destination = "/etc/udev/rules.d/72-gravastar-webhid.rules";
+      })
+    ];
 
     # Audio
     pulseaudio.enable = false;
@@ -61,10 +75,8 @@
         {
           default = {
             ids = [
-              "*"
-              "-0000:0000"
-              "-1234:5678"
-              "-dec0:5eba"
+              "258a:002a"
+              "0001:0001"
             ];
             settings.main = commonMain;
           };

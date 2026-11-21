@@ -1078,13 +1078,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/穏やかな身支度_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
