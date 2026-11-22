@@ -18,6 +18,7 @@ order = [ "Main", "Windows-11" ]
     center = [ "cat", "clock", "Anchored_Separator", "date" ]
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
+    layer = "auto"
     padding = 6
     panel_overlap = 0
     radius = 35
@@ -79,6 +80,7 @@ order = [ "Main", "Windows-11" ]
     concave_edge_corners = false
     enabled = false
     end = [ "tray", "Win11_Network", "Win11_Volume", "Win11_Battery", "Win11_Clock", "Win11_Notifications" ]
+    layer = "auto"
     margin_ends = 0
     position = "bottom"
     radius = 0
@@ -205,7 +207,8 @@ address = "Nakhon Pathom"
 blur_intensity = 0.0
 edge_smoothness = 0.0
 tint_intensity = 0.0
-transition = [ "pixel" ]
+transition = [ "crt" ]
+transition_duration = 1000
 
 [lockscreen_widgets]
 enabled = true
@@ -960,6 +963,7 @@ clipboard_auto_paste = "off"
 clipboard_history_max_entries = 500
 corner_radius_scale = 2.0
 date_format = "%A, %d %B %Y"
+font_family = "Inter"
 input_borders = false
 niri_overview_close_on_launch_enabled = true
 niri_overview_type_to_launch_enabled = true
@@ -1078,13 +1082,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/Happy Birthday！！2025_normal.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/Happy Birthday！！2025_normal.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Hinomori Shizuku/落ちちゃったかしら？_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Momoi Airi/Happy Birthday！！2025_normal.webp"
 
 [widget.Anchored_Separator]
 anchor = true

@@ -25,12 +25,12 @@
     };
 
     # Noctalia
-    noctalia.url = "github:noctalia-dev/noctalia/";
+    noctalia.url = "github:noctalia-dev/noctalia/cachix";
     noctalia-greeter = {
-      url = "github:noctalia-dev/noctalia-greeter";
+      url = "github:noctalia-dev/noctalia-greeter/cachix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    luciole.url = "github:noctalia-dev/luciole";
+    luciole.url = "github:noctalia-dev/luciole/cachix";
 
     # Secrets
     sops-nix.url = "github:Mic92/sops-nix";

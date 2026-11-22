@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = true
-format = "$cmd_duration $directory$git_branch\n  $character\n"
+format = "$directory$git_branch$fill$cmd_duration\n $character\n"
 
 [character]
 error_symbol = "[ ](bold fg:red)"

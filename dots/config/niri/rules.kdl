@@ -1,5 +1,6 @@
-// General
+// -- Windows --
 
+// General
 window-rule {
   clip-to-geometry true
   draw-border-with-background false
@@ -11,55 +12,46 @@ window-rule {
 }
 
 // Turn on shadows for floating windows.
-
 window-rule {
   match is-floating=true
   shadow { on; }
 }
 
 // Open floating
-
 window-rule {
-  match app-id=r#"org.gnome.clocks"#
-  match app-id=r#"org.gnome.Calculator"#
-  match app-id=r#"org\.gnome\.NautilusPreviewer"#
-  match app-id=r#"org\.gnome\.Nautilus"# title=r#"(?i)^Open(.*)"#
+  match app-id=r#"(?i)^org\.gnome\.Calculator$"#
+  match app-id=r#"(?i)^org\.gnome\.Nautilus$"# title=r#"(?i)^Open(.*)"#
+  match app-id=r#"(?i)^org\.gnome\.NautilusPreviewer$"#
+  match app-id=r#"(?i)^org\.gnome\.clocks$"#
 
+  match app-id="blender"  title=r#"(?i)^Preferences$"#
   match app-id="obsidian" title=r#"(?i)^Settings\s-\s(.*)\s-\sObsidian(.*)$"#
-  match app-id="steam"    title=r#"(?i)^Friends\sList$"#
   match app-id="steam"    title=r#"(?i)^(.*)\s-\sChat$"#
-  match app-id="blender"  title=r#"(?i)Preferences"#
+  match app-id="steam"    title=r#"(?i)^Friends\sList$"#
 
   open-floating true
 }
 
-// Size
-
+// Open maximize
 window-rule {
-  match app-id=r#"(?i)^OpenTabletDriver\.UX\.Gtk$"#
-  match app-id=r#"(?i)^ai\.opencode\.desktop$"#
-  match app-id=r#"^md\.obsidian\.Obsidian$"#
+  match app-id="blender"
+  match app-id="blockbench"
+  match app-id="brave"
   match app-id="brave-origin"
+  match app-id="code"
   match app-id="spotify"
   match app-id="steam"
   match app-id="vesktop"
-
-  open-maximized-to-edges false
-  default-column-width { proportion 0.93; }
-}
-
-window-rule {
-  match app-id="blockbench"
-  match app-id="blender"
-  match app-id="code"
+  match app-id=r#"(?i)^OpenTabletDriver\.UX\.Gtk$"#
+  match app-id=r#"(?i)^ai\.opencode\.desktop$"#
+  match app-id=r#"(?i)^md\.obsidian\.Obsidian$"#
   match app-id=r#"org\.kde\.krita"#
 
   open-maximized-to-edges false
   open-maximized true
 }
 
-// Steam
-
+// Steam notification
 window-rule {
   match app-id="steam" title=r#"(?i)^notificationtoasts_\d+_desktop$"#
 
@@ -67,13 +59,13 @@ window-rule {
   geometry-corner-radius 0
 }
 
+// Steam Big Picture mode
 window-rule {
   match app-id="steam" title=r#"(?i)^Steam\sBig\sPicture\sMode$"#
   open-fullscreen true
 }
 
-// Picture in Picture
-
+// Picture in picture
 window-rule {
   match title=r#"(?i)^picture\sin\spicture$"#
 
@@ -86,7 +78,6 @@ window-rule {
 }
 
 // Privacy
-
 window-rule {
   match app-id=r#"^org\.keepassxc\.KeePassXC$"#
   match app-id=r#"^org\.gnome\.World\.Secrets$"#
@@ -94,22 +85,23 @@ window-rule {
   block-out-from "screen-capture"
 }
 
-// Layer
+// -- Layer --
 
+// Noctalia's wallpaper backdrop
 layer-rule {
   match namespace=r#"noctalia-backdrop"#
   // match namespace=r#"noctalia-wallpaper"#
-
   place-within-backdrop true
 }
 
+// Noctalia's widgets/panels
 layer-rule {
   match namespace=r#"^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"#
   match namespace=r#"^noctalia-desktop-widget-(.*)$"#
-
   background-effect { xray false; }
 }
 
+// Noctalia's window switcher
 layer-rule {
   match namespace="noctalia-window-switcher"
   background-effect { blur false; }
