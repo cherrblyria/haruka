@@ -988,10 +988,16 @@ settings_expand_all_groups = true
 
         [shell.launcher.providers.calculator]
         global = true
-        prefix = ""
+        prefix = "c"
+
+        [shell.launcher.providers.emoji]
+        prefix = "e"
+
+        [shell.launcher.providers.panels]
+        prefix = "p"
 
         [shell.launcher.providers.windows]
-        global = true
+        prefix = "w"
 
     [shell.panel]
     borders = false
@@ -1082,13 +1088,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
