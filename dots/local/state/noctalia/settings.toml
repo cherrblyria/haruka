@@ -1062,13 +1062,13 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "dark"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "niri", "qt" ]
-    community_ids = [ "discord", "lazygit", "yazi" ]
+    community_ids = [ "discord", "papirus-icons", "lazygit", "yazi" ]
 
 [wallpaper]
 directory = "/home/cherr/Wallpapers/Project Sekai"
@@ -1082,13 +1082,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Rin/最前列で応援！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Rin/最前列で応援！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Rin/最前列で応援！_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Kagamine Len/指さす先にある道_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
