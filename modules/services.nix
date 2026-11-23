@@ -116,6 +116,7 @@
             id = "shared-dcim";
             label = "DCIM";
             path = "${config.services.syncthing.dataDir}/DCIM";
+            ignorePatterns = [ ".git/" ];
             devices = [
               "Phone"
               "Tablet"
@@ -126,6 +127,7 @@
             id = "shared-pics";
             label = "Pictures";
             path = "${config.services.syncthing.dataDir}/Pictures";
+            ignorePatterns = [ ".git/" ];
             devices = [
               "Phone"
               "Tablet"
@@ -136,7 +138,10 @@
             id = "shared-docs";
             label = "Documents";
             path = "${config.services.syncthing.dataDir}/Documents";
-            ignorePatterns = [ "**/.obsidian/community-plugins.json" ];
+            ignorePatterns = [
+              "**/.obsidian/community-plugins.json"
+              ".git/"
+            ];
             devices = [
               "Phone"
               "Tablet"
