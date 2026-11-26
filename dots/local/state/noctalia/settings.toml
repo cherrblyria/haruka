@@ -1088,13 +1088,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Otori Emu/feat.シナモロール_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
 
 [widget.Anchored_Separator]
 anchor = true
