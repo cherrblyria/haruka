@@ -11,6 +11,7 @@
       enable = true;
       enableFishIntegration = true;
     };
+    opencode.enable = true;
 
     # CLI
     fastfetch.enable = true;
