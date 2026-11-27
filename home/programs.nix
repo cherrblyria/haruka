@@ -3,15 +3,12 @@
   programs = {
     # TUI
     btop.enable = true;
-    cava = {
-      enable = true;
-      settings.color.theme = "noctalia";
-    };
+    cava.enable = true;
+    opencode.enable = true;
     yazi = {
       enable = true;
       enableFishIntegration = true;
     };
-    opencode.enable = true;
 
     # CLI
     fastfetch.enable = true;
@@ -103,9 +100,7 @@
     obsidian = {
       enable = true;
       cli.enable = true;
-      package = pkgs.obsidian.override {
-        commandLineArgs = "--password-store=gnome-libsecret";
-      };
+      package = pkgs.obsidian.override { commandLineArgs = "--password-store=gnome-libsecret"; };
     };
     vscode = {
       enable = true;
@@ -135,7 +130,6 @@
 
         window_margin_width = "0";
         window_padding_width = "0 16";
-        hide_window_decorations = "yes";
         resize_in_steps = "no";
         confirm_os_window_close = "0";
 

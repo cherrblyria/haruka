@@ -1,0 +1,283 @@
+[include]
+files = ["keybinds.toml"]
+
+[include.optional]
+files = ["noctalia.toml"]
+
+[general]
+autostart = ["noctalia"]
+xwayland = true
+xwayland_native_resolution = true
+xwayland_xsettings = true
+attach_modal_dialogs = true
+mod_key = "Super"
+show_cheatsheet = false
+focus_on_activate = false
+honor_restored_maximize = false
+
+[workspaces]
+back_and_forth = true
+empty_above = false
+
+# [[workspace]]
+# name = "AESTHETIC"
+# layout.mode = "dwindle"
+# layout.gap = 10
+# layout.struts.left = 30
+# layout.struts.right = 30
+# layout.struts.top = 30
+# layout.struts.bottom = 30
+
+[appearance]
+prefer_no_csd = true
+border_width = 0
+outer_border_width = 0
+corner_radius = 20
+drag_opacity = 0.75
+opaque_fullscreen = true
+
+[appearance.blur]
+enabled = true
+optimized = true
+passes = 2
+radius = 5
+noise = 0.02
+brightness = 0.9
+contrast = 0.9
+saturation = 1.1
+
+[appearance.shadow]
+enabled = true
+softness = 10
+offset_x = 0
+offset_y = 0
+
+[appearance.title_bar]
+height = 26
+font = "Inter Medium 10"
+title_align = "center" 
+button_position = "left"
+buttons = ["minimize", "maximize", "close"]
+button_size = -1
+button_gap = 6
+button_padding = 10
+button_corner_radius = -1
+button_glyph = "hover" 
+button_glyph_size = -1 
+button_glyph_stroke = -1
+button_background = true 
+
+[input.keyboard]
+layout = "us,th"
+variant = ""
+options = ""
+model = ""
+repeat_rate = 25
+repeat_delay = 400
+numlock_toggle = true
+track_layout = "global"
+
+[input.touchpad]
+tap = true
+natural_scroll = true
+
+[input.mouse]
+natural_scroll = true
+accel_profile = "flat"
+sensitivity = -0.88
+scroll_wheel_step = 60
+
+[input.focus]
+follows_mouse = "sloppy"
+follows_mouse_max_scroll = 0.33
+hover_raises = false
+
+[layout]
+gap = 6
+mode = "scrolling"
+extent_presets = [0.5, 0.75, 0.93]
+client_maximize = "column"
+
+[layout.dwindle]
+preserve_split = true
+new_toward_cursor = true
+
+[layout.stacking]
+drop_zones = true
+
+[layout.master]
+position = "left"
+default_width_fraction = 0.60
+new_on_top = true
+new_becomes_master = false
+
+[layout.scrolling]
+default_extent_fraction = 0.75
+center_on_overview_select = true
+
+[layout.tabs]
+default_display = "normal"
+new_tab_position = "after_active"
+middle_click_closes = true
+
+[appearance.tab_bar]
+style = "indicator"
+height = 10
+padding = 10
+position = "top"
+gap = -1
+font = "Inter Medium 10"
+visible = true
+hide_when_single = false
+max_tabs = 6
+overflow = "scroll"
+
+# Blur windows over the cached wallpaper blur. Set blur_optimized = false to
+# include overlapping windows behind them, at a GPU cost on every frame that
+# moves anything behind them.
+[[window_rule]]
+blur = true
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.Noctalia$"
+default_floating = true
+default_floating_size_px = { width = 1020, height = 900 }
+
+[[window_rule]]
+match.app_id = "^dev.noctalia.UmbrielSharePicker$"
+default_floating = true
+default_floating_size_px = { width = 800, height = 600 }
+
+[[window_rule]]
+match.title = "^(Picture-in-Picture|Picture in picture)$"
+default_floating = true
+default_maximize = false
+default_position = { x = 20, y = 20, anchor = "bottom_right" }
+
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+# Keep game menus inside their window; a focus or workspace keybind releases the pointer.
+# [[window_rule]]
+# match.app_id = "^steam_app_.*$"
+# confine_pointer = true
+
+# Scroll more slowly on the touchpad in one application.
+# [[window_rule]]
+# match.app_id = "^chromium$"
+# touchpad_scroll_factor = 0.5
+
+# Show title bars only when the window's workspace uses the stacking layout.
+# Keep [appearance.title_bar] mode = "off" for other layouts.
+# [[window_rule]]
+# match.layout = "stacking"
+# title_bar = "on"
+
+# Keep compositor shortcuts available while a virtual machine window is focused.
+# [[window_rule]]
+# match.app_id = "^virt-manager$"
+# allow_shortcuts_inhibit = false
+
+# Keep an application drawing while it is hidden on another workspace, for programs whose other work stalls without it.
+# [[window_rule]]
+# match.app_id = "^obs$"
+# background_render = true
+
+# Keep matching windows visible locally but absent from screenshots and recordings.
+# https://docs.noctalia.dev/umbriel/window-rules-behavior/#hide-a-window-from-screenshots
+# [[window_rule]]
+# match.app_id = "^private-app$"
+# block_capture = true
+
+# Keep one application's modal dialogs as ordinary windows.
+# [[window_rule]]
+# match.app_id = "^gimp"
+# match.is_dialog = true
+# attach_to_parent = false
+
+# Named scratchpads can launch an application when toggled while empty.
+# [[scratchpad]]
+# name = "music"
+# spawn_when_empty = "spotify"
+# Hide the scratchpad when its last window closes, so the next toggle relaunches.
+# hide_when_empty = true
+# Preserve each window's current size proportions when moving between monitors.
+# proportional_size = true
+# A shown scratchpad hides when you click or focus a window behind it. Turn this off to keep it up instead.
+# modal = false
+# A shown scratchpad hides when you switch workspace. Turn this on to keep it up across workspaces.
+# sticky = true
+# Tile the scratchpad's windows instead of floating them; takes the [[workspace]] layout keys.
+# layout.mode = "dwindle"
+
+# [[window_rule]]
+# match.app_id = "^spotify$"
+# default_scratchpad = "music"
+
+# Give scratchpad windows their own border colors.
+# [[window_rule]]
+# match.is_scratchpad = true
+# border_color_focused = "#E5C07BFF"
+# border_color_unfocused = "#5C4A2AFF"
+
+# Hide enabled title bars only while a window is maximized to edges.
+# [[window_rule]]
+# match.is_maximized_to_edges = true
+# title_bar = "off"
+
+# Frame the window being screencast; viewers never see the frame.
+# [[window_rule]]
+# match.is_cast_target = true
+# border_color_focused = "#40C057FF"
+# border_color_unfocused = "#40C057FF"
+
+# Leave an application that draws its own corners and shadow undecorated.
+# [[window_rule]]
+# match.app_id = "^org[.]gnome[.]TextEditor$"
+# border_width = 0
+# corner_radius = 0
+# shadow = false
+
+# ==============================================================================
+# Layer rules
+# https://docs.noctalia.dev/umbriel/layer-rules/
+[[layer_rule]]
+match.namespace = "^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd|desktop-widget-[^\"]*)$"
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+
+# Panels, the dock, notifications and OSDs open over windows, so they blur the
+# live content behind them. The bar and desktop widgets sit on the wallpaper and
+# keep the cached wallpaper blur.
+[[layer_rule]]
+match.namespace = "^noctalia-(notification|dock|panel|attached-panel|osd)$"
+blur_optimized = false
+
+# Window-rule opacity and blur fade on focus changes by default. Disable this
+# independently of border fades, or choose its own duration and curve.
+# [animation.windows_opacity]
+# enabled = true
+# curve = "spring:1,900"
+# duration_ms = 250 # For non-spring curves; a spring sets its own length.
+
+# Optional live workspace reveal (see docs/user/animation.md).
+# Add the bundled effects/animation/workspace_wipe/effect.toml to your includes.
+# [animation.workspaces]
+# style = "reveal"          # Default: "slide"
+# effect = "workspace_wipe"
+# duration_ms = 300
+# curve = "easeout"
+
+# Shade over a window while a modal dialog is attached to it.
+# [animation.dialogs]
+# dim = 0.3
+
+# Darken the output below a launcher while it is visible:
+# [[layer_rule]]
+# match.namespace = "^vicinae$"
+# dim_behind = 0.5
+# Window rules accept dim_behind too: https://docs.noctalia.dev/umbriel/window-rules-appearance/#dim-behind

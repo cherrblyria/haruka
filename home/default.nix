@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, inputs, ... }:
 let
   homeDirectory = config.users.users.cherr.home;
   dots = "${homeDirectory}/haruka/dots";
@@ -22,6 +22,8 @@ in
           stateVersion = "26.11";
         };
         imports = [
+          inputs.umbriel.homeModules.default
+
           ./appearance.nix
           ./dotfiles.nix
           ./programs.nix

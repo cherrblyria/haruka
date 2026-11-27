@@ -28,7 +28,6 @@ in
     krita
     pavucontrol
     vesktop
-    inputs.luciole.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Games
     (gamePkgs.osu-stable.override {
@@ -89,6 +88,9 @@ in
   programs = {
     # Shell
     fish.enable = true;
+
+    # Noctalia
+    luciole.enable = true;
 
     # Games
     gamemode.enable = true;

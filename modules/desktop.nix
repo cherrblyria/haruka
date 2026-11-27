@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+
   environment.systemPackages = with pkgs; [
     mizuki-psekai-cursor # Cursor
     wl-clipboard # Clipboard
@@ -7,7 +8,7 @@
 
   programs = {
     gpu-screen-recorder.enable = true; # Sreenrecorder
-    niri.enable = true; # Window Manager
+    umbriel.enable = true; # Window Manager
 
     # Noctalia
     noctalia = {
@@ -15,6 +16,9 @@
       recommendedServices.enable = true;
     };
   };
+
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.greetd.enableGnomeKeyring = true;
 
   # Noctalia Greeter
   services.displayManager.noctalia-greeter = {

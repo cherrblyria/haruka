@@ -27,6 +27,10 @@
     "niri/keymap.kdl".source = mkSymlink "config/niri/keymap.kdl";
     "niri/rules.kdl".source = mkSymlink "config/niri/rules.kdl";
 
+    # Umbriel
+    "umbriel/config.toml".source = mkSymlink "config/umbriel/config.toml";
+    "umbriel/keybinds.toml".source = mkSymlink "config/umbriel/keybinds.toml";
+
     # Xdg
     "mimeapps.list".source = mkSymlink "config/mimeapps.list";
   };

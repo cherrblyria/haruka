@@ -15,7 +15,7 @@ order = [ "Main", "Windows-11" ]
     background_opacity = 0.96999997831881046
     capsule_border = "outline_variant"
     capsule_opacity = 0.24999999441206455
-    center = [ "cat", "clock", "Anchored_Separator", "date" ]
+    center = [ "bar", "cat", "clock", "Anchored_Separator", "date" ]
     end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
     font_weight = 400
     layer = "auto"
@@ -163,16 +163,23 @@ widget_order = [ "desktop-widget-0000000000000006" ]
 theme_mode_changed = "niri msg action do-screen-transition"
 
 [hot_corners]
-delay_ms = 200
+delay_ms = 100
 enabled = true
 
     [hot_corners.bottom_left]
     action = "command"
-    command = "niri msg action focus-column-left"
+    command = "umbriel msg window-focus-left"
 
     [hot_corners.bottom_right]
     action = "command"
-    command = "niri msg action focus-column-right"
+    command = "umbriel msg window-focus-right"
+
+    [hot_corners.top_left]
+    action = "command"
+    command = "umbriel msg overview-toggle"
+
+    [hot_corners.top_right]
+    action = "window_switcher"
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -942,7 +949,8 @@ enabled = [
     "noctalia/world_clock",
     "aristides/udiskie",
     "nightwatch75/file-search",
-    "3dprogramin/vscode"
+    "3dprogramin/vscode",
+    "noctalia/umbriel-companion"
 ]
 
     [[plugins.source]]
@@ -972,6 +980,8 @@ polkit_agent = true
 popup_borders = false
 screen_time_enabled = true
 settings_expand_all_groups = true
+umbriel_audio_provider_enabled = true
+umbriel_overview_close_on_launch_enabled = true
 
     [shell.animation]
     speed = 0.60000000894069672
@@ -1068,12 +1078,12 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "dark"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "niri", "qt" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "niri", "qt", "umbriel" ]
     community_ids = [ "discord", "papirus-icons", "lazygit", "yazi" ]
 
 [wallpaper]
@@ -1088,13 +1098,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1190,6 +1200,9 @@ width = 112
     right = "media toggle"
     scroll_down = "media previous"
     scroll_up = "media next"
+
+[widget.bar]
+type = "noctalia/umbriel-companion:bar"
 
 [widget.battery]
 color = "on_surface"

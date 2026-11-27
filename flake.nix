@@ -6,13 +6,11 @@
       "https://noctalia.cachix.org"
       "https://nix-gaming.cachix.org"
       "https://freesmlauncher.cachix.org"
-      "https://cherrblyria.cachix.org"
     ];
     extra-trusted-public-keys = [
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
       "freesmlauncher.cachix.org-1:Jcp5Q9wiLL+EDv8Mh7c6L9xGk+lXr7/otpKxMOuBuDs="
-      "cherrblyria.cachix.org-1:1tlxt98I/WI6e+PjmU6mBOj2qpLOmB2S4z8U4shx2tc="
     ];
   };
 
@@ -26,10 +24,8 @@
 
     # Noctalia
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
-    noctalia-greeter = {
-      url = "github:noctalia-dev/noctalia-greeter/cachix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    umbriel.url = "github:noctalia-dev/umbriel/cachix";
+    noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter/cachix";
     luciole.url = "github:noctalia-dev/luciole/cachix";
 
     # Secrets
@@ -40,10 +36,7 @@
 
     # Gaming
     nix-gaming.url = "github:fufexan/nix-gaming";
-    freesmlauncher = {
-      url = "github:FreesmTeam/FreesmLauncher";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    freesmlauncher.url = "github:FreesmTeam/FreesmLauncher";
   };
 
   outputs =
@@ -55,8 +48,12 @@
 
         modules = [
           inputs.home-manager.nixosModules.home-manager
+
           inputs.noctalia.nixosModules.default
           inputs.noctalia-greeter.nixosModules.default
+          inputs.umbriel.nixosModules.default
+          inputs.luciole.nixosModules.default
+
           inputs.sops-nix.nixosModules.sops
           inputs.spicetify-nix.nixosModules.spicetify
 
