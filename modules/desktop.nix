@@ -23,8 +23,8 @@
     passwordless-sync-users = [ "cherr" ];
     settings = {
       cursor = {
-        size = 24;
         theme = "mizuki-psekai-cursor";
+        size = 32;
       };
       keyboard.layout = "us";
     };

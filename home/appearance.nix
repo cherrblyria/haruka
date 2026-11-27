@@ -9,7 +9,7 @@
 
       name = "mizuki-psekai-cursor";
       package = pkgs.mizuki-psekai-cursor;
-      size = 24;
+      size = 32;
     };
   };
 

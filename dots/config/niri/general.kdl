@@ -57,7 +57,7 @@ recent-windows {
 
 cursor {
   xcursor-theme "mizuki-psekai-cursor"
-  xcursor-size 24
+  xcursor-size 32
 
   hide-when-typing
   hide-after-inactive-ms 5000

@@ -1068,7 +1068,7 @@ settings_expand_all_groups = true
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Monochrome"
-mode = "light"
+mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
@@ -1088,13 +1088,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Asahina Mafuyu/君だけが知る静寂_normal.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Tenma Saki/４人一緒だから_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1195,6 +1195,7 @@ width = 112
 color = "on_surface"
 device = "/org/freedesktop/UPower/devices/battery_BAT0"
 display_mode = "graphic"
+font_family = "CaskaydiaCove NF Light"
 scale = 0.85000000000000009
 
 [widget.brightness]
@@ -1218,14 +1219,17 @@ type = "dotnetrob/cat:cat"
 [widget.clock]
 capsule_radius = "auto"
 color = "on_surface_variant"
+font_family = "CaskaydiaCove NF SemiLight"
 format = "{:%R}"
+tooltip_format = "{:%A %d %B %Y, %X (%Z)}"
 
     [widget.clock.actions]
     left = "panel-toggle noctalia/world_clock:panel"
 
 [widget.date]
 color = "on_surface_variant"
-format = "{:%a, %d %b}"
+font_family = "CaskaydiaCove NF SemiLight"
+tooltip_format = "{:%A %d %B %Y, %X (%Z)}"
 
 [widget.file-search]
 type = "nightwatch75/file-search:file-search"
