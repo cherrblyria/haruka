@@ -39,8 +39,6 @@ order = [ "Main", "Windows-11" ]
         forward = "workspace-switch prev"
         middle = "annotate"
         scroll_down = "workspace-switch next"
-        scroll_left = "exec niri msg action focus-column-left"
-        scroll_right = "exec niri msg action focus-column-right"
         scroll_up = "workspace-switch prev"
 
         [[bar.Main.capsule_group]]
@@ -155,9 +153,6 @@ widget_order = [ "desktop-widget-0000000000000006" ]
         reversed = false
         show_wave = false
         show_when_idle = false
-
-[hooks]
-theme_mode_changed = "niri msg action do-screen-transition"
 
 [hot_corners.bottom_left]
 command = "umbriel msg window-focus-left"
@@ -956,8 +951,6 @@ corner_radius_scale = 2.0
 date_format = "%A, %d %B %Y"
 font_family = "Inter"
 input_borders = false
-niri_overview_close_on_launch_enabled = true
-niri_overview_type_to_launch_enabled = true
 password_style = "random"
 polkit_agent = true
 popup_borders = false
