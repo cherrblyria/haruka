@@ -52,6 +52,11 @@ in
     snapshot
 
     # Dev
+    (python3.withPackages (
+      ps: with ps; [
+        tomlkit
+      ]
+    ))
     direnv
     gh
     nixd

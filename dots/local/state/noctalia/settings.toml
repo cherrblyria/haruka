@@ -15,8 +15,18 @@ order = [ "Main", "Windows-11" ]
     background_opacity = 0.96999997831881046
     capsule_border = "outline_variant"
     capsule_opacity = 0.24999999441206455
-    center = [ "bar", "cat", "clock", "Anchored_Separator", "date" ]
-    end = [ "audio_visualizer", "privacy", "lock_keys", "recorder", "group:g4", "notifications", "battery" ]
+    center = [ "cat", "clock", "Anchored_Separator", "date" ]
+    end = [
+        "settings_2",
+        "bar",
+        "audio_visualizer",
+        "privacy",
+        "lock_keys",
+        "recorder",
+        "group:g4",
+        "notifications",
+        "battery"
+    ]
     font_weight = 400
     layer = "auto"
     padding = 6
@@ -57,20 +67,7 @@ order = [ "Main", "Windows-11" ]
         enabled = true
         fill = "surface_container"
         id = "g1"
-        members = [
-            "launcher",
-            "file_search_2",
-            "button",
-            "Separator",
-            "workspaces",
-            "Separator",
-            "Center",
-            "Float",
-            "Maximize",
-            "Fullscreen",
-            "Quit",
-            "Separator"
-        ]
+        members = [ "launcher", "file_search_2", "button", "Separator", "workspaces", "Separator" ]
         opacity = 0.0
         padding = 0.0
 
@@ -162,24 +159,8 @@ widget_order = [ "desktop-widget-0000000000000006" ]
 [hooks]
 theme_mode_changed = "niri msg action do-screen-transition"
 
-[hot_corners]
-delay_ms = 100
-enabled = true
-
-    [hot_corners.bottom_left]
-    action = "command"
-    command = "umbriel msg window-focus-left"
-
-    [hot_corners.bottom_right]
-    action = "command"
-    command = "umbriel msg window-focus-right"
-
-    [hot_corners.top_left]
-    action = "command"
-    command = "umbriel msg overview-toggle"
-
-    [hot_corners.top_right]
-    action = "window_switcher"
+[hot_corners.bottom_left]
+command = "umbriel msg window-focus-left"
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -282,6 +263,7 @@ widget_order = [
         show_keyboard_layout = true
         show_login_button = false
         show_media = true
+        show_media_controls = true
         show_password_reveal = false
         show_session_buttons = true
         show_unlock_hint = false
@@ -950,7 +932,8 @@ enabled = [
     "aristides/udiskie",
     "nightwatch75/file-search",
     "3dprogramin/vscode",
-    "noctalia/umbriel-companion"
+    "noctalia/umbriel-companion",
+    "0rz0rz0rz/umbriel-settings"
 ]
 
     [[plugins.source]]
@@ -1074,6 +1057,8 @@ umbriel_overview_close_on_launch_enabled = true
 
     [shell.window_switcher]
     mru = true
+    show_count = false
+    style = "grid"
 
 [theme]
 builtin = "Rosé Pine"
@@ -1083,7 +1068,7 @@ source = "wallpaper"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "niri", "qt", "umbriel" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "luciole", "qt", "umbriel" ]
     community_ids = [ "discord", "papirus-icons", "lazygit", "yazi" ]
 
 [wallpaper]
@@ -1098,13 +1083,13 @@ transition_on_startup = true
     recursive = true
 
     [wallpaper.default]
-    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hanasato Minori/可愛い応援_after_training.webp"
 
     [wallpaper.last]
-    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hanasato Minori/可愛い応援_after_training.webp"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cherr/Wallpapers/Project Sekai/Shinonome Ena/傷だらけになったとしても_after_training.webp"
+    path = "/home/cherr/Wallpapers/Project Sekai/Hanasato Minori/可愛い応援_after_training.webp"
 
 [widget.Anchored_Separator]
 anchor = true
@@ -1112,52 +1097,11 @@ color = "outline_variant"
 text = "|"
 type = "text"
 
-[widget.Center]
-glyph = "layout-align-middle"
-tooltip = "Center column"
-type = "custom_button"
-
-    [widget.Center.actions]
-    left = "exec niri msg action center-column"
-
-[widget.Float]
-glyph = "stack-pop"
-tooltip = "Toggle float window"
-type = "custom_button"
-
-    [widget.Float.actions]
-    left = "exec niri msg action toggle-window-floating"
-
-[widget.Fullscreen]
-glyph = "border-corners"
-tooltip = "Toggle fullscreen window"
-type = "custom_button"
-
-    [widget.Fullscreen.actions]
-    left = "exec niri msg action fullscreen-window"
-
 [widget.Icon_Workspace]
 color = "primary"
 glyph = "layout-grid"
 interactive = false
 type = "custom_button"
-
-[widget.Maximize]
-glyph = "arrows-maximize"
-tooltip = "Toggle maximize column"
-type = "custom_button"
-
-    [widget.Maximize.actions]
-    left = "exec niri msg action maximize-column"
-
-[widget.Quit]
-color = "error"
-glyph = "x"
-tooltip = "Close window"
-type = "custom_button"
-
-    [widget.Quit.actions]
-    left = "exec niri msg action close-window"
 
 [widget.Separator]
 color = "outline_variant"
@@ -1287,6 +1231,9 @@ type = "noctalia/screen_recorder:recorder"
 
 [widget.session]
 color = "error"
+
+[widget.settings_2]
+type = "0rz0rz0rz/umbriel-settings:settings"
 
 [widget.status]
 type = "aristides/udiskie:status"

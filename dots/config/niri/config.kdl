@@ -1,9 +1,0 @@
-include "rules.kdl"
-include "input.kdl"
-include "keymap.kdl"
-include "general.kdl"
-include "animations.kdl"
-include optional=true "noctalia.kdl"
-
-spawn-at-startup "noctalia"
-spawn-at-startup "noctalia msg notification-show \"Welcome back ~\" \"I've been waiting for you <3\""
