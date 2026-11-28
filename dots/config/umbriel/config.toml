@@ -16,6 +16,7 @@ honor_restored_maximize = false
 
 # ------------------------------------------------------------------- outputs
 [output."Chimei Innolux Corporation 0x14D1 Unknown"]
+cyclic_workspaces = true
 
 # --------------------------------------------------------------------- input
 [input.keyboard]
@@ -36,6 +37,7 @@ sensitivity = -0.88
 [input.focus]
 follows_mouse = "sloppy"
 follows_mouse_max_scroll = 0.33
+hover_raises = false
 
 [input.drag_edge_scroll]
 enabled = true
@@ -169,6 +171,7 @@ action = "window-focus-right"
 "Alt+Space" = {action = "keyboard-layout-next", allow_when_locked=true}
 "Alt+Tab" = "spawn noctalia msg window-switcher hold"
 "Ctrl+Alt+Delete" = "spawn noctalia msg panel-toggle session"
+"Ctrl+Print" = {action = "spawn noctalia msg plugin noctalia/screen_recorder:service all toggle", allow_when_locked = true, repeat = false}
 "Ctrl+Shift+Escape" = "spawn noctalia msg panel-toggle control-center system"
 "Mod" = "spawn noctalia msg panel-toggle launcher"
 "Mod+1" = "workspace-switch 1"
@@ -184,27 +187,51 @@ action = "window-focus-right"
 "Mod+Alt+W" = { action = "spawn noctalia msg wallpaper-random", allow_when_locked = true }
 "Mod+C" = "spawn umbriel msg column-center; umbriel msg window-center"
 "Mod+Comma" = "window-consume-or-expel-left"
+"Mod+Ctrl+1" = "window-move-to-workspace 1"
+"Mod+Ctrl+2" = "window-move-to-workspace 2"
+"Mod+Ctrl+3" = "window-move-to-workspace 3"
+"Mod+Ctrl+4" = "window-move-to-workspace 4"
+"Mod+Ctrl+5" = "window-move-to-workspace 5"
+"Mod+Ctrl+6" = "window-move-to-workspace 6"
+"Mod+Ctrl+7" = "window-move-to-workspace 7"
+"Mod+Ctrl+8" = "window-move-to-workspace 8"
+"Mod+Ctrl+9" = "window-move-to-workspace 9"
 "Mod+Ctrl+Comma" = "window-consume-from-left"
+"Mod+Ctrl+Down" = "window-move-down"
+"Mod+Ctrl+End" = "column-move-to-last"
 "Mod+Ctrl+F" = { action = "window-toggle-maximize-to-edges", repeat = false }
+"Mod+Ctrl+H" = "column-move-left"
+"Mod+Ctrl+Home" = "column-move-to-first"
+"Mod+Ctrl+J" = "window-move-down"
+"Mod+Ctrl+K" = "window-move-up"
+"Mod+Ctrl+L" = "column-move-right"
+"Mod+Ctrl+Left" = "column-move-left"
+"Mod+Ctrl+M" = "window-restore-minimized"
 "Mod+Ctrl+Period" = "window-consume-from-right"
 "Mod+Ctrl+R" = "window-cycle-secondary-extent"
-"Mod+WheelDown" = "workspace-next"
-"Mod+WheelUp" = "workspace-previous"
+"Mod+Ctrl+Right" = "column-move-right"
+"Mod+Ctrl+Shift+WheelDown" = "column-move-right"
+"Mod+Ctrl+Shift+WheelUp" = "column-move-left"
+"Mod+Ctrl+Up" = "window-move-up"
+"Mod+Ctrl+WheelDown" = "column-move-to-workspace-next"
+"Mod+Ctrl+WheelUp" = "column-move-to-workspace-previous"
 "Mod+Ctrl+Z" = "spawn noctalia msg lockscreen-widgets-toggle-edit"
 "Mod+D" = "spawn noctalia msg panel-toggle control-center home"
 "Mod+Down" = "window-focus-or-workspace-down"
 "Mod+E" = { action = "spawn luciole", repeat = false }
 "Mod+End" = "column-focus-last"
 "Mod+Equal" = "window-modify-primary-extent +0.02"
+"Mod+Escape" = {action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false}
 "Mod+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+F1" = "window-focus-next"
 "Mod+H" = "window-focus-left"
 "Mod+Home" = "column-focus-first"
+"Mod+I" = {action = "spawn noctalia msg caffeine-toggle", allow_when_locked = true}
 "Mod+J" = "window-focus-or-workspace-down"
 "Mod+K" = "window-focus-or-workspace-up"
 "Mod+L" = "window-focus-right"
 "Mod+Left" = "window-focus-left"
-"Mod+M" = { action = "workspace-toggle-show-desktop", repeat = false }
+"Mod+M" = {action = "window-minimize", repeat = false}
 "Mod+Minus" = "window-modify-primary-extent -0.02"
 "Mod+MouseMiddle" = "layout-scroll-drag"
 "Mod+N" = "spawn noctalia msg panel-toggle control-center notifications"
@@ -216,38 +243,22 @@ action = "window-focus-right"
 "Mod+Return" = { action = "spawn kitty", repeat = false }
 "Mod+Right" = "window-focus-right"
 "Mod+S" = "workspace-set-layout toggle"
-"Mod+Shift+1" = "window-move-to-workspace 1"
-"Mod+Shift+2" = "window-move-to-workspace 2"
-"Mod+Shift+3" = "window-move-to-workspace 3"
-"Mod+Shift+4" = "window-move-to-workspace 4"
-"Mod+Shift+5" = "window-move-to-workspace 5"
-"Mod+Shift+6" = "window-move-to-workspace 6"
-"Mod+Shift+7" = "window-move-to-workspace 7"
-"Mod+Shift+8" = "window-move-to-workspace 8"
-"Mod+Shift+9" = "window-move-to-workspace 9"
 "Mod+Shift+Comma" = { action = "spawn noctalia msg settings-open", repeat = false }
 "Mod+Shift+D" = { action = "spawn noctalia msg theme-mode-toggle", allow_when_locked = true }
-"Mod+Shift+Down" = "window-move-down"
 "Mod+Shift+E" = "spawn kitty yazi"
-"Mod+Shift+End" = "column-move-to-last"
 "Mod+Shift+Equal" = "window-modify-secondary-extent +0.02"
-"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 "Mod+Shift+F" = { action = "window-toggle-fullscreen", repeat = false }
-"Mod+Shift+H" = "column-move-left"
-"Mod+Shift+Home" = "column-move-to-first"
-"Mod+Shift+I" = { action = "spawn noctalia msg caffeine-toggle", allow_when_locked = true }
-"Mod+Shift+J" = "window-move-down"
-"Mod+Shift+K" = "window-move-up"
-"Mod+Shift+L" = "column-move-right"
-"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+J" = "workspace-move-down"
+"Mod+Shift+K" = "workspace-move-up"
+"Mod+Shift+M" = "workspace-toggle-show-desktop"
 "Mod+Shift+Minus" = "window-modify-secondary-extent -0.02"
 "Mod+Shift+N" = { action = "spawn noctalia msg notification-dnd-toggle", allow_when_locked = true }
 "Mod+Shift+P" = { action = "dpms-off", repeat = false, allow_when_locked = true }
-"Mod+Shift+Right" = "column-move-right"
 "Mod+Shift+Slash" = {action = "spawn noctalia msg panel-toggle 0rz0rz0rz/umbriel-settings:main", repeat = false}
 "Mod+Shift+T" = { action = "window-focus-switch-floating", repeat = false }
-"Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+W" = "spawn noctalia msg panel-toggle wallpaper"
+"Mod+Shift+WheelDown" = "window-focus-right"
+"Mod+Shift+WheelUp" = "window-focus-left"
 "Mod+Shift+Z" = "spawn noctalia msg desktop-widgets-toggle-edit"
 "Mod+Slash" = "cheatsheet-toggle"
 "Mod+Space" = "spawn noctalia msg panel-toggle launcher"
@@ -255,8 +266,8 @@ action = "window-focus-right"
 "Mod+Up" = "window-focus-or-workspace-up"
 "Mod+V" = "spawn noctalia msg panel-toggle clipboard"
 "Mod+W" = { action = "overview-toggle", repeat = false }
-"Mod+Shift+WheelDown" = "window-focus-right"
-"Mod+Shift+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "workspace-next"
+"Mod+WheelUp" = "workspace-previous"
 "Mod+Z" = "spawn noctalia msg desktop-widgets-toggle"
 "Print" = {action = "spawn noctalia msg screenshot-fullscreen", allow_when_locked = true, repeat = false}
 "Shift+Print" = {action = "spawn noctalia msg screenshot-region", repeat = false}
@@ -275,10 +286,17 @@ action = "window-focus-right"
 "XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down", allow_when_locked = true }
 "XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up", allow_when_locked = true }
 "XF86Search" = "spawn noctalia msg panel-toggle launcher"
-"Mod+Ctrl+Shift+WheelUp" = "column-move-left"
-"Mod+Ctrl+Shift+WheelDown" = "column-move-right"
-"Mod+Ctrl+WheelDown" = "column-move-to-workspace-next"
-"Mod+Ctrl+WheelUp" = "column-move-to-workspace-previous"
+"Mod+BracketLeft" = "layout-master-count-decrease"
+"Mod+BracketRight" = "layout-master-count-increase"
+"Mod+Alt+1" = {action = "workspace-set-layout scrolling", repeat = false}
+"Mod+Alt+2" = {action = "workspace-set-layout dwindle", repeat = false}
+"Mod+Alt+3" = {action = "workspace-set-layout master", repeat = false}
+"Mod+Alt+4" = {action = "workspace-set-layout stacking", repeat = false}
+"Mod+Ctrl+Q" = {action = "window-kill", repeat = false}
+"Mod+X" = "scratchpad-toggle"
+"Mod+Shift+X" = {action = "window-toggle-scratchpad", repeat = false}
+"Mod+Tab" = "workspace-next"
+"Mod+Shift+Tab" = "workspace-previous"
 
 # -------------------------------------------------------------- window rules
 [[window_rule]]
